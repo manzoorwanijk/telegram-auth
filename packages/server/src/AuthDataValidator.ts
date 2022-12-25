@@ -1,5 +1,5 @@
 import { hexStringToArrayBuffer } from './utils';
-import type { AuthDataMap } from './utils';
+import type { AuthDataMap, TelegramUserData } from './utils';
 
 export type AuthDataValidatorOptions = {
 	/**
@@ -122,7 +122,7 @@ export class AuthDataValidator {
 	 * @param {AuthDataMap} authDataMap The data to be validated
 	 * @returns The validated data.
 	 */
-	public async validate<T>(authDataMap: AuthDataMap): Promise<T> {
+	public async validate<T = TelegramUserData>(authDataMap: AuthDataMap): Promise<T> {
 		// Ensure the bot token is not empty
 		this.assertBotToken();
 		// Ensure the data is valid
