@@ -1,0 +1,3 @@
+{
+	"extends": "@telgram-auth/tsconfig/base.json"
+}

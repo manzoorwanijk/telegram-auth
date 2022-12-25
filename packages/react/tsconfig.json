@@ -1,0 +1,10 @@
+{
+	"extends": "@telgram-auth/tsconfig/base.json",
+	"include": ["src"],
+	"compilerOptions": {
+		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"jsx": "react-jsx",
+		"noEmit": false,
+		"baseUrl": "."
+	}
+}
