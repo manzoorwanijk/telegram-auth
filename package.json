@@ -1,0 +1,21 @@
+{
+	"name": "@telgram/auth",
+	"private": true,
+	"scripts": {
+		"build": "turbo run build",
+		"deploy": "turbo run deploy",
+		"dev": "turbo run dev --parallel",
+		"lint": "turbo run lint"
+	},
+	"devDependencies": {
+		"eslint": "^8.30.0",
+		"prettier": "^2.8.1",
+		"tsup": "^6.5.0",
+		"turbo": "^1.6.3"
+	},
+	"workspaces": [
+		"examples/*",
+		"internal/*",
+		"packages/*"
+	]
+}
