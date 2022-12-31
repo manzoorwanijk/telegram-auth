@@ -3,19 +3,32 @@
 	"version": "0.0.1",
 	"private": true,
 	"license": "MIT",
-	"main": "dist/index.js",
-	"module": "dist/index.mjs",
+	"main": "dist/cjs/index.js",
+	"module": "dist/esm/index.js",
+	"types": "dist/types/index.d.ts",
+	"source": "src/index.ts",
+	"exports": {
+		"./package.json": "./package.json",
+		".": {
+			"import": {
+				"node": "./dist/cjs/index.js",
+				"default": "./dist/esm/index.js"
+			},
+			"require": "./dist/cjs/index.js"
+		}
+	},
 	"files": [
 		"dist"
 	],
 	"scripts": {
-		"build": "tsup src --dts",
-		"build:fast": "tsup src",
-		"dev": "pnpm build:fast -- --watch",
+		"build": "pnpm build:ts",
+		"build:ts": "pnpm build:esm && pnpm build:cjs",
+		"build:esm": "tsc",
+		"build:cjs": "tsc --module commonjs --outDir dist/cjs",
+		"dev": "tsc --watch",
 		"clean": "rimraf dist .turbo",
 		"typecheck": "tsc --noEmit"
 	},
-	"dependencies": {},
 	"devDependencies": {
 		"@telgram-auth/tsconfig": "workspace:*",
 		"@types/node": "^18.11.17",

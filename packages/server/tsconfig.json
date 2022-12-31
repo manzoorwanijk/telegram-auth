@@ -1,12 +1,16 @@
 {
 	"extends": "@telgram-auth/tsconfig/base.json",
-	"include": ["src"],
 	"compilerOptions": {
-		// in order to support web workers, we need these types for subtle crypto
-		"lib": ["DOM", "ESNext"],
-		"baseUrl": ".",
-		"paths": {
-			"~/*": ["./src/*"]
-		}
-	}
+		"lib": [
+			"ESNext",
+			// in order to support web workers, we need this for subtle crypto
+			"DOM"
+		],
+		"noEmit": false,
+		"declarationDir": "dist/types",
+		"outDir": "dist/esm",
+	},
+	"include": [
+		"src"
+	]
 }

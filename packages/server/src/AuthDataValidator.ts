@@ -23,6 +23,13 @@ export type AuthDataValidatorOptions = {
 	 * @default 86400 (1 day)
 	 */
 	inValidateDataAfter?: number;
+
+	/**
+	 * Whether to throw an error if the data is empty/incomplete
+	 *
+	 * @default true
+	 */
+	throwIfEmptyData?: boolean;
 };
 
 /**
@@ -39,11 +46,20 @@ export class AuthDataValidator {
 
 	protected inValidateDataAfter!: number;
 
-	constructor({ botToken, subtleCrypto, encoder, inValidateDataAfter = 86400 }: AuthDataValidatorOptions) {
+	protected throwIfEmptyData!: boolean;
+
+	constructor({
+		botToken,
+		subtleCrypto,
+		encoder,
+		inValidateDataAfter = 86400,
+		throwIfEmptyData = true,
+	}: AuthDataValidatorOptions) {
 		this.setBotToken(botToken);
 		this.setCrypto(this.assertValidCrypto(subtleCrypto));
 		this.setEncoder(encoder || new TextEncoder());
 		this.setInValidateDataAfter(inValidateDataAfter);
+		this.setThrowIfEmptyData(throwIfEmptyData);
 	}
 
 	/**
@@ -115,6 +131,17 @@ export class AuthDataValidator {
 	}
 
 	/**
+	 * This function sets the throwIfEmptyData property of the class.
+	 *
+	 * @param {boolean} throwIfEmptyData - Whether to throw an error if the data is empty/incomplete.
+	 */
+	public setThrowIfEmptyData(throwIfEmptyData: boolean) {
+		this.throwIfEmptyData = throwIfEmptyData;
+
+		return this;
+	}
+
+	/**
 	 * It takes a map of auth data received from Telegram, and returns the data if it's valid
 	 *
 	 * @link https://core.telegram.org/widgets/login#checking-authorization
@@ -122,7 +149,7 @@ export class AuthDataValidator {
 	 * @param {AuthDataMap} authDataMap The data to be validated
 	 * @returns The validated data.
 	 */
-	public async validate<T = TelegramUserData>(authDataMap: AuthDataMap): Promise<T> {
+	public async validate<T extends { id: number | string } = TelegramUserData>(authDataMap: AuthDataMap): Promise<T> {
 		// Ensure the bot token is not empty
 		this.assertBotToken();
 		// Ensure the data is valid
@@ -161,13 +188,21 @@ export class AuthDataValidator {
 			throw new Error('Unauthorized! The data has expired.');
 		}
 
+		let data: T;
+
 		if (isWebAppData) {
 			const user = authData.get('user') || '{}';
 
-			return authData.get('user') ? JSON.parse(user.toString()) : {};
+			data = authData.get('user') ? JSON.parse(user.toString()) : {};
+		} else {
+			data = Object.fromEntries(authData.entries()) as T;
 		}
 
-		return Object.fromEntries(authData.entries()) as T;
+		if (this.throwIfEmptyData && !data.id) {
+			throw new Error('Error! The data is incomplete.');
+		}
+
+		return data;
 	}
 
 	/**

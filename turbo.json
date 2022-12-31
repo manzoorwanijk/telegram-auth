@@ -15,6 +15,10 @@
 		"typecheck": {
 			"cache": false,
 			"dependsOn": ["^typecheck"]
+		},
+		"clean": {
+			"cache": false,
+			"dependsOn": ["^clean"]
 		}
 	},
 	"globalDependencies": ["tsconfig.json"]
