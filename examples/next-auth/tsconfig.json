@@ -1,0 +1,32 @@
+{
+	"include": [
+		"process.d.ts",
+		"next-env.d.ts",
+		"next-auth.d.ts",
+		"**/*.ts",
+		"**/*.tsx"
+	],
+	"compilerOptions": {
+		"target": "ES2019",
+		"lib": [
+			"DOM",
+			"DOM.Iterable",
+			"ES2019"
+		],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": true,
+		"jsx": "preserve",
+		"incremental": true
+	},
+	"exclude": [
+		"node_modules"
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"name": "@telgram-auth/example-next-auth",
+	"private": true,
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start",
+		"clean": "rimraf .next .turbo",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@telgram-auth/react": "*",
+		"@telgram-auth/server": "*",
+		"next": "latest",
+		"next-auth": "latest",
+		"nodemailer": "^6",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "^17",
+		"@types/react": "^18.0.15",
+		"typescript": "^4"
+	}
+}
