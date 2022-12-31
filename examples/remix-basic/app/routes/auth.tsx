@@ -1,5 +1,4 @@
 import { redirect } from '@remix-run/node';
-import { useLoaderData } from '@remix-run/react';
 import type { LoaderArgs } from '@remix-run/node';
 import { urlStrToAuthDataMap, AuthDataValidator } from '@telgram-auth/server';
 
@@ -12,10 +11,12 @@ export async function loader({ request }: LoaderArgs) {
 
 	const data = urlStrToAuthDataMap(request.url);
 
-	const user = await validator.validate(data);
+	try {
+		const user = await validator.validate(data);
 
-	if (!user.id || !user.first_name) {
-		session.flash('error', 'Incomplete data');
+		session.set('user', user);
+	} catch (error: any) {
+		session.flash('error', error.message);
 
 		// Redirect back to the login page with errors.
 		return redirect('/login', {
@@ -25,18 +26,10 @@ export async function loader({ request }: LoaderArgs) {
 		});
 	}
 
-	session.set('user', user);
-
 	// Login succeeded, send them to the home page.
 	return redirect('/', {
 		headers: {
 			'Set-Cookie': await commitSession(session),
 		},
 	});
-}
-
-export default function Login() {
-	const { error } = useLoaderData();
-
-	return <div>{error ? <div className="error">{error}</div> : null}</div>;
 }
