@@ -1,10 +1,17 @@
 {
 	"extends": "@telgram-auth/tsconfig/base.json",
-	"include": ["src"],
 	"compilerOptions": {
-		"lib": ["DOM", "DOM.Iterable", "ESNext"],
+		"lib": [
+			"DOM",
+			"DOM.Iterable",
+			"ESNext"
+		],
 		"jsx": "react-jsx",
 		"noEmit": false,
-		"baseUrl": "."
-	}
+		"declarationDir": "dist/types",
+		"outDir": "dist/esm",
+	},
+	"include": [
+		"src"
+	]
 }
