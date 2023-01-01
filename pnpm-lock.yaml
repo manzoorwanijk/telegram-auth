@@ -7,7 +7,6 @@ importers:
       '@changesets/changelog-github': 0.4.6
       '@changesets/cli': 2.24.1
       '@telgram-auth/eslint-config': workspace:*
-      '@telgram-auth/tsconfig': workspace:*
       eslint: ^8.30.0
       prettier: ^2.8.1
       rimraf: ^3.0.2
@@ -17,7 +16,6 @@ importers:
       '@changesets/changelog-github': 0.4.6
       '@changesets/cli': 2.24.1
       '@telgram-auth/eslint-config': link:internal/eslint-config
-      '@telgram-auth/tsconfig': link:internal/tsconfig
       eslint: 8.30.0
       prettier: 2.8.1
       rimraf: 3.0.2
@@ -104,52 +102,26 @@ importers:
       react: 18.2.0
       typescript: 4.9.4
 
-  internal/tsconfig:
-    specifiers: {}
-
-  internal/typedoc-config:
-    specifiers:
-      typedoc: ^0.23.23
-      typedoc-plugin-markdown: ^3.14.0
-      typedoc-plugin-mdn-links: ^2.0.2
-      typescript: ^4.9.4
-    devDependencies:
-      typedoc: 0.23.23_typescript@4.9.4
-      typedoc-plugin-markdown: 3.14.0_typedoc@0.23.23
-      typedoc-plugin-mdn-links: 2.0.2_typedoc@0.23.23
-      typescript: 4.9.4
-
   packages/react:
     specifiers:
-      '@telgram-auth/tsconfig': workspace:*
-      '@telgram-auth/typedoc-config': workspace:*
       '@types/react': ^18.0.26
       '@types/react-dom': ^18.0.10
       react: ^18.2.0
-      react-dom: ^18.2.0
       typedoc: ^0.23.23
       typescript: ^4.9.4
-    dependencies:
-      react: 18.2.0
-      react-dom: 18.2.0_react@18.2.0
     devDependencies:
-      '@telgram-auth/tsconfig': link:../../internal/tsconfig
-      '@telgram-auth/typedoc-config': link:../../internal/typedoc-config
       '@types/react': 18.0.26
       '@types/react-dom': 18.0.10
+      react: 18.2.0
       typedoc: 0.23.23_typescript@4.9.4
       typescript: 4.9.4
 
   packages/server:
     specifiers:
-      '@telgram-auth/tsconfig': workspace:*
-      '@telgram-auth/typedoc-config': workspace:*
       '@types/node': ^18.11.17
       typedoc: ^0.23.23
       typescript: ^4.9.4
     devDependencies:
-      '@telgram-auth/tsconfig': link:../../internal/tsconfig
-      '@telgram-auth/typedoc-config': link:../../internal/typedoc-config
       '@types/node': 18.11.17
       typedoc: 0.23.23_typescript@4.9.4
       typescript: 4.9.4
@@ -5015,19 +4987,6 @@ packages:
       through2: 2.0.5
     dev: true
 
-  /handlebars/4.7.7:
-    resolution: {integrity: sha512-aAcXm5OAfE/8IXkcZvCepKU3VzW1/39Fb5ZuqMtgI/hT8X2YgoMvBY5dLhq/cpOvw7Lk1nK/UF71aLG/ZnVYRA==}
-    engines: {node: '>=0.4.7'}
-    hasBin: true
-    dependencies:
-      minimist: 1.2.7
-      neo-async: 2.6.2
-      source-map: 0.6.1
-      wordwrap: 1.0.0
-    optionalDependencies:
-      uglify-js: 3.17.4
-    dev: true
-
   /hard-rejection/2.1.0:
     resolution: {integrity: sha512-VIZB+ibDhx7ObhAe7OVtoEbuP4h/MuOTHJ+J8h/eBXotJYl0fBgR72xDFCKgIh22OJZIOVNxBMWuhAr10r8HdA==}
     engines: {node: '>=6'}
@@ -8584,23 +8543,6 @@ packages:
       media-typer: 0.3.0
       mime-types: 2.1.35
 
-  /typedoc-plugin-markdown/3.14.0_typedoc@0.23.23:
-    resolution: {integrity: sha512-UyQLkLRkfTFhLdhSf3RRpA3nNInGn+k6sll2vRXjflaMNwQAAiB61SYbisNZTg16t4K1dt1bPQMMGLrxS0GZ0Q==}
-    peerDependencies:
-      typedoc: '>=0.23.0'
-    dependencies:
-      handlebars: 4.7.7
-      typedoc: 0.23.23_typescript@4.9.4
-    dev: true
-
-  /typedoc-plugin-mdn-links/2.0.2_typedoc@0.23.23:
-    resolution: {integrity: sha512-Fzjvfsj3rxvmZNqWRvq9JTGBkOkrPp0kBtvJCJ4U5Jm14OF1KoRErtmwgVQcPLA5Xs8h5I/W4uZBaL8SDHsgxQ==}
-    peerDependencies:
-      typedoc: 0.22.x || 0.23.x
-    dependencies:
-      typedoc: 0.23.23_typescript@4.9.4
-    dev: true
-
   /typedoc/0.23.23_typescript@4.9.4:
     resolution: {integrity: sha512-cg1YQWj+/BU6wq74iott513U16fbrPCbyYs04PHZgvoKJIc6EY4xNobyDZh4KMfRGW8Yjv6wwIzQyoqopKOUGw==}
     engines: {node: '>= 14.14'}
@@ -8620,14 +8562,6 @@ packages:
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
-
-  /uglify-js/3.17.4:
-    resolution: {integrity: sha512-T9q82TJI9e/C1TAxYvfb16xO120tMVFZrGA3f9/P4424DNu6ypK103y0GPFVa17yotwSyZW5iYXgjYHkGrJW/g==}
-    engines: {node: '>=0.8.0'}
-    hasBin: true
-    requiresBuild: true
-    dev: true
-    optional: true
 
   /unbox-primitive/1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
@@ -8970,10 +8904,6 @@ packages:
   /word-wrap/1.2.3:
     resolution: {integrity: sha512-Hz/mrNwitNRh/HUAtM/VT/5VH+ygD6DV7mYKZAtHOrbs8U7lvPS6xf7EJKMF0uW1KJCl0H701g3ZGus+muE5vQ==}
     engines: {node: '>=0.10.0'}
-    dev: true
-
-  /wordwrap/1.0.0:
-    resolution: {integrity: sha512-gvVzJFlPycKc5dZN4yPkP8w7Dc37BtP1yczEneOb4uq34pXZcvrtRTmWV8W+Ume+XCxKgbjM+nevkyFPMybd4Q==}
     dev: true
 
   /wrap-ansi/6.2.0:
