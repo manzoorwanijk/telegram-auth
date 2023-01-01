@@ -1,7 +1,16 @@
 {
 	"name": "@telgram-auth/react",
-	"version": "0.0.1",
-	"private": true,
+	"version": "1.0.0",
+	"description": "React component to display Telegram Login Widget",
+	"keywords": [
+		"telegram",
+		"bot",
+		"login",
+		"widget",
+		"react"
+	],
+	"author": "Manzoor Wani <contact@manzoorwani.dev>",
+	"homepage": "https://github.com/manzoorwanijk/telegram-auth",
 	"license": "MIT",
 	"main": "dist/cjs/index.js",
 	"module": "dist/esm/index.js",
@@ -18,8 +27,21 @@
 		}
 	},
 	"files": [
-		"dist"
+		"dist",
+		"src"
 	],
+	"sideEffects": false,
+	"publishConfig": {
+		"access": "public"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/manzoorwanijk/telegram-auth.git",
+		"directory": "packages/react"
+	},
+	"bugs": {
+		"url": "https://github.com/manzoorwanijk/telegram-auth/issues"
+	},
 	"scripts": {
 		"build": "pnpm build:ts",
 		"build:ts": "pnpm build:esm && pnpm build:cjs",
