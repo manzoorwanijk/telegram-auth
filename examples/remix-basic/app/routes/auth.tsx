@@ -5,7 +5,7 @@ import { urlStrToAuthDataMap, AuthDataValidator } from '@telgram-auth/server';
 import { getSession, commitSession } from '../sessions';
 
 export async function loader({ request }: LoaderArgs) {
-	const validator = new AuthDataValidator({ botToken: process.env.BOT_TOKEN || '' });
+	const validator = new AuthDataValidator({ botToken: `${process.env.BOT_TOKEN}` });
 
 	const session = await getSession(request.headers.get('Cookie'));
 
