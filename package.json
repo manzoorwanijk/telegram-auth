@@ -3,12 +3,13 @@
 	"private": true,
 	"scripts": {
 		"build": "turbo run build",
-		"build:packages": "turbo run build --filter=./packages/*",
+		"build:p": "turbo run build --filter=./packages/*",
+		"kick-off": "pnpm clean && pnpm build:p",
 		"clean": "turbo run clean",
 		"deploy": "turbo run deploy",
+		"docs": "turbo run build:docs",
 		"dev": "turbo run dev --parallel",
 		"lint": "turbo run lint",
-		"postinstall": "pnpm build:packages",
 		"typecheck": "turbo run typecheck"
 	},
 	"devDependencies": {
