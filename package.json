@@ -29,7 +29,6 @@
 		"@changesets/changelog-github": "0.4.6",
 		"@changesets/cli": "2.24.1",
 		"@telgram-auth/eslint-config": "workspace:*",
-		"@telgram-auth/tsconfig": "workspace:*",
 		"eslint": "^8.30.0",
 		"prettier": "^2.8.1",
 		"rimraf": "^3.0.2",

@@ -1,5 +1,5 @@
 {
-	"extends": "@telgram-auth/tsconfig/base.json",
+	"extends": "../../tsconfig.json",
 	"compilerOptions": {
 		"lib": [
 			"ESNext",
