@@ -4,8 +4,5 @@
 	"private": true,
 	"files": [
 		"base.json"
-	],
-	"devDependencies": {
-		"@types/node": "^18.11.17"
-	}
+	]
 }
