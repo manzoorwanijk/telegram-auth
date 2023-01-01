@@ -1,9 +1,14 @@
+/**
+ * Shape of the data to be passed AuthDataValidator.validate().
+ */
 export type AuthDataMap = Map<string, string | number>;
 
 /**
- * @link https://core.telegram.org/widgets/login#receiving-authorization-data
+ * The expected user data from Telegram.
+ *
+ * @see https://core.telegram.org/widgets/login#receiving-authorization-data
  */
-export type TelegramUserData = {
+export interface TelegramUserData {
 	id: number;
 	first_name: string;
 	last_name?: string;
@@ -13,4 +18,4 @@ export type TelegramUserData = {
 	is_bot?: boolean;
 	language_code?: string;
 	is_premium?: boolean;
-};
+}

@@ -1,7 +1,7 @@
 import { hexStringToArrayBuffer } from './utils';
 import type { AuthDataMap, TelegramUserData } from './utils';
 
-export type AuthDataValidatorOptions = {
+export interface AuthDataValidatorOptions {
 	/**
 	 * The bot token to be used for validating the data
 	 */
@@ -9,6 +9,8 @@ export type AuthDataValidatorOptions = {
 
 	/**
 	 * The crypto object to be used for validating the data
+	 *
+	 * @see https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto
 	 */
 	subtleCrypto?: SubtleCrypto;
 
@@ -30,7 +32,7 @@ export type AuthDataValidatorOptions = {
 	 * @default true
 	 */
 	throwIfEmptyData?: boolean;
-};
+}
 
 /**
  * Validates the data sent by Telegram Login Widget
@@ -144,7 +146,7 @@ export class AuthDataValidator {
 	/**
 	 * It takes a map of auth data received from Telegram, and returns the data if it's valid
 	 *
-	 * @link https://core.telegram.org/widgets/login#checking-authorization
+	 * @see https://core.telegram.org/widgets/login#checking-authorization
 	 *
 	 * @param {AuthDataMap} authDataMap The data to be validated
 	 * @returns The validated data.
@@ -255,7 +257,7 @@ export class AuthDataValidator {
 
 		if (isWebAppData) {
 			/**
-			 * @link https://core.telegram.org/bots/webapps#validating-data-received-via-the-web-app
+			 * @see https://core.telegram.org/bots/webapps#validating-data-received-via-the-web-app
 			 */
 			const secretKey = await this.crypto.importKey(
 				'raw',
@@ -267,7 +269,7 @@ export class AuthDataValidator {
 			secret = await this.crypto.sign('HMAC', secretKey, this.encoder.encode(this.botToken));
 		} else {
 			/**
-			 * @link https://core.telegram.org/widgets/login#checking-authorization
+			 * @see https://core.telegram.org/widgets/login#checking-authorization
 			 */
 			secret = await this.crypto.digest('SHA-256', this.encoder.encode(this.botToken));
 		}

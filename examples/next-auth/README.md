@@ -1,6 +1,6 @@
-# @telegram-auth remix-basic example
+# @telegram-auth next-auth Example
 
--   [Remix Docs](https://remix.run/docs)
+-   [NextAuth.js](https://next-auth.js.org/)
 
 ## Get Started
 
@@ -18,13 +18,13 @@
     pnpm kick-off
     ```
 
-3. Go to the remix-basic example folder
+3. Go to the next-auth example folder
 
     ```sh
-    cd examples/remix-basic
+    cd examples/next-auth
     ```
 
-4. Create a `.env` file by copying `.example.env` and update `BOT_TOKEN` and `BOT_USERNAME` with your bot's token and username that you got from [@BotFather](https://t.me/BotFather).
+4. Create a `.env.local` file by copying `.example.env.local` and update `BOT_TOKEN` and `BOT_USERNAME` with your bot's token and username that you got from [@BotFather](https://t.me/BotFather).
 
 5. Start the dev server
 
@@ -37,5 +37,7 @@
     ```sh
     ngrok http 3000
     ```
+
+    Copy the ngrok URL and update `NEXTAUTH_URL` in `.env.local` with it.
 
     Don't forget to send `/setdomain` command to [@BotFather](https://t.me/BotFather) with the ngrok URL to fix the "Bot domain invalid" error.

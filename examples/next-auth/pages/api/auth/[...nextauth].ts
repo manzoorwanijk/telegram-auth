@@ -9,7 +9,7 @@ export const authOptions: NextAuthOptions = {
 			name: 'Telegram Login',
 			credentials: {},
 			async authorize(credentials, req) {
-				const validator = new AuthDataValidator({ botToken: process.env.BOT_TOKEN || '' });
+				const validator = new AuthDataValidator({ botToken: `${process.env.BOT_TOKEN}` });
 
 				const data = objectToAuthDataMap(req.query || {});
 
