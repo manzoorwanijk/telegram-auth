@@ -1,7 +1,7 @@
 /**
  * The data received from Telegram when the user is authenticated.
  *
- * @link https://core.telegram.org/widgets/login#receiving-authorization-data
+ * @see https://core.telegram.org/widgets/login#receiving-authorization-data
  */
 export interface TelegramAuthData {
 	id: number;

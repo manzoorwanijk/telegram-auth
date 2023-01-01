@@ -15,7 +15,7 @@ function initTelegramAuthLogin(options: TTelegramAuthLogin) {
 /**
  * A React component that renders a Telegram login button.
  *
- * @link https://core.telegram.org/widgets/login
+ * @see https://core.telegram.org/widgets/login
  *
  * @param {LoginButtonProps} props The props to pass to the component.
  * @returns A React component that renders the Telegram login button.

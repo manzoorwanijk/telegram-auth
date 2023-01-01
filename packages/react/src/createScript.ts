@@ -3,7 +3,7 @@ import { CreateScriptOptions } from './types';
 /**
  * It creates a script tag with the right attributes to load the Telegram widget
  *
- * @link https://core.telegram.org/widgets/login
+ * @see https://core.telegram.org/widgets/login
  *
  * @param {CreateScriptOptions} options - The options to create the script.
  * @returns A script element

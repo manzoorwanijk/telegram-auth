@@ -1,0 +1,9 @@
+{
+    "extends": [
+        "@telgram-auth/typedoc-config/typedoc.json"
+    ],
+    "out": "docs",
+    "entryPoints": [
+        "src/index.ts"
+    ],
+}
