@@ -10,7 +10,7 @@
 		"react"
 	],
 	"author": "Manzoor Wani <contact@manzoorwani.dev>",
-	"homepage": "https://github.com/manzoorwanijk/telegram-auth",
+	"homepage": "https://github.com/manzoorwanijk/telegram-auth/tree/main/packages/react",
 	"license": "MIT",
 	"main": "dist/cjs/index.js",
 	"module": "dist/esm/index.js",
