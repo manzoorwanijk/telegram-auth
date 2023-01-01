@@ -41,7 +41,7 @@ A React component that renders the Telegram login button.
 
 #### Defined in
 
-[LoginButton.tsx:23](https://github.com/manzoorwanijk/telegram-auth/blob/b847da9/packages/react/src/LoginButton.tsx#L23)
+[LoginButton.tsx:23](https://github.com/manzoorwanijk/telegram-auth/blob/bb906d2/packages/react/src/LoginButton.tsx#L23)
 
 ___
 
@@ -69,4 +69,4 @@ A script element
 
 #### Defined in
 
-[createScript.ts:11](https://github.com/manzoorwanijk/telegram-auth/blob/b847da9/packages/react/src/createScript.ts#L11)
+[createScript.ts:11](https://github.com/manzoorwanijk/telegram-auth/blob/bb906d2/packages/react/src/createScript.ts#L11)
