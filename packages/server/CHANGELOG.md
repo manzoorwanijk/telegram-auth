@@ -2,4 +2,6 @@
 
 ## 1.0.0
 
--   Initial release
+### Patch Changes
+
+-   7c92821: Initial release
