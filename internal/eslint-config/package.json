@@ -1,7 +1,8 @@
 {
 	"name": "@telgram-auth/eslint-config",
-	"version": "0.0.1",
+	"version": "1.0.0",
 	"main": "base.js",
+	"private": true,
 	"license": "MIT",
 	"files": [
 		"base.js",
