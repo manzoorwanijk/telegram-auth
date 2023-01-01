@@ -25,13 +25,16 @@
 		"build:ts": "pnpm build:esm && pnpm build:cjs",
 		"build:esm": "tsc",
 		"build:cjs": "tsc --module commonjs --outDir dist/cjs",
+		"build:docs": "typedoc",
 		"dev": "tsc --watch",
 		"clean": "rimraf dist .turbo",
 		"typecheck": "tsc --noEmit"
 	},
 	"devDependencies": {
 		"@telgram-auth/tsconfig": "workspace:*",
+		"@telgram-auth/typedoc-config": "workspace:*",
 		"@types/node": "^18.11.17",
+		"typedoc": "^0.23.23",
 		"typescript": "^4.9.4"
 	}
 }
