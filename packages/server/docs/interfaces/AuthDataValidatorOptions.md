@@ -16,19 +16,21 @@
 
 ### botToken
 
-• **botToken**: `string`
+• `Optional` **botToken**: `string`
 
-The bot token to be used for validating the data
+The bot token to be used for validating the data.
+
+If you don't pass this here, you'll need to set it later using `setBotToken()`.
 
 #### Defined in
 
-[AuthDataValidator.ts:8](https://github.com/manzoorwanijk/telegram-auth/blob/bb906d2/packages/server/src/AuthDataValidator.ts#L8)
+[AuthDataValidator.ts:10](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/AuthDataValidator.ts#L10)
 
-___
+---
 
 ### subtleCrypto
 
-• `Optional` **subtleCrypto**: [`SubtleCrypto`]( https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto )
+• `Optional` **subtleCrypto**: [`SubtleCrypto`](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto)
 
 The crypto object to be used for validating the data
 
@@ -38,21 +40,21 @@ https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto
 
 #### Defined in
 
-[AuthDataValidator.ts:15](https://github.com/manzoorwanijk/telegram-auth/blob/bb906d2/packages/server/src/AuthDataValidator.ts#L15)
+[AuthDataValidator.ts:17](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/AuthDataValidator.ts#L17)
 
-___
+---
 
 ### encoder
 
-• `Optional` **encoder**: [`TextEncoder`]( https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder )
+• `Optional` **encoder**: [`TextEncoder`](https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder)
 
 The encoder to be used for encoding the data
 
 #### Defined in
 
-[AuthDataValidator.ts:20](https://github.com/manzoorwanijk/telegram-auth/blob/bb906d2/packages/server/src/AuthDataValidator.ts#L20)
+[AuthDataValidator.ts:22](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/AuthDataValidator.ts#L22)
 
-___
+---
 
 ### inValidateDataAfter
 
@@ -66,9 +68,9 @@ The time in seconds after which the data should be considered invalid
 
 #### Defined in
 
-[AuthDataValidator.ts:27](https://github.com/manzoorwanijk/telegram-auth/blob/bb906d2/packages/server/src/AuthDataValidator.ts#L27)
+[AuthDataValidator.ts:29](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/AuthDataValidator.ts#L29)
 
-___
+---
 
 ### throwIfEmptyData
 
@@ -82,4 +84,4 @@ true
 
 #### Defined in
 
-[AuthDataValidator.ts:34](https://github.com/manzoorwanijk/telegram-auth/blob/bb906d2/packages/server/src/AuthDataValidator.ts#L34)
+[AuthDataValidator.ts:36](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/AuthDataValidator.ts#L36)
