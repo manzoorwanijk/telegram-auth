@@ -13,10 +13,10 @@
 	"scripts": {
 		"build": "turbo run build",
 		"build:p": "turbo run build --filter=./packages/*",
+		"buuild:docs": "turbo run build:docs",
 		"kick-off": "pnpm clean && pnpm build:p",
 		"clean": "turbo run clean",
 		"deploy": "turbo run deploy",
-		"docs": "turbo run build:docs",
 		"dev": "turbo run dev --parallel",
 		"lint": "turbo run lint",
 		"typecheck": "turbo run typecheck",

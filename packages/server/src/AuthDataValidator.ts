@@ -3,9 +3,11 @@ import type { AuthDataMap, TelegramUserData } from './utils';
 
 export interface AuthDataValidatorOptions {
 	/**
-	 * The bot token to be used for validating the data
+	 * The bot token to be used for validating the data.
+	 *
+	 * If you don't pass this here, you'll need to set it later using `setBotToken()`.
 	 */
-	botToken: string;
+	botToken?: string;
 
 	/**
 	 * The crypto object to be used for validating the data
@@ -51,12 +53,12 @@ export class AuthDataValidator {
 	protected throwIfEmptyData!: boolean;
 
 	constructor({
-		botToken,
+		botToken = '',
 		subtleCrypto,
 		encoder,
 		inValidateDataAfter = 86400,
 		throwIfEmptyData = true,
-	}: AuthDataValidatorOptions) {
+	}: AuthDataValidatorOptions = {}) {
 		this.setBotToken(botToken);
 		this.setCrypto(this.assertValidCrypto(subtleCrypto));
 		this.setEncoder(encoder || new TextEncoder());
@@ -193,9 +195,7 @@ export class AuthDataValidator {
 		let data: T;
 
 		if (isWebAppData) {
-			const user = authData.get('user') || '{}';
-
-			data = authData.get('user') ? JSON.parse(user.toString()) : {};
+			data = authData.has('user') ? JSON.parse(authData.get('user')?.toString() || '{}') : {};
 		} else {
 			data = Object.fromEntries(authData.entries()) as T;
 		}

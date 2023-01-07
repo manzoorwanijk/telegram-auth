@@ -27,7 +27,7 @@ https://core.telegram.org/widgets/login#checking-authorization
 
 ### constructor
 
-• **new AuthDataValidator**(`«destructured»`)
+• **new AuthDataValidator**(`«destructured»?`)
 
 #### Parameters
 
@@ -37,7 +37,7 @@ https://core.telegram.org/widgets/login#checking-authorization
 
 #### Defined in
 
-[AuthDataValidator.ts:53](https://github.com/manzoorwanijk/telegram-auth/blob/bb906d2/packages/server/src/AuthDataValidator.ts#L53)
+[AuthDataValidator.ts:55](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/AuthDataValidator.ts#L55)
 
 ## Methods
 
@@ -59,7 +59,7 @@ Sets the bot token to be used for validating the data
 
 #### Defined in
 
-[AuthDataValidator.ts:94](https://github.com/manzoorwanijk/telegram-auth/blob/bb906d2/packages/server/src/AuthDataValidator.ts#L94)
+[AuthDataValidator.ts:96](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/AuthDataValidator.ts#L96)
 
 ___
 
@@ -81,7 +81,7 @@ Sets the crypto to be used for validating the data
 
 #### Defined in
 
-[AuthDataValidator.ts:105](https://github.com/manzoorwanijk/telegram-auth/blob/bb906d2/packages/server/src/AuthDataValidator.ts#L105)
+[AuthDataValidator.ts:107](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/AuthDataValidator.ts#L107)
 
 ___
 
@@ -103,7 +103,7 @@ Sets the encoder to be used for encoding the data
 
 #### Defined in
 
-[AuthDataValidator.ts:116](https://github.com/manzoorwanijk/telegram-auth/blob/bb906d2/packages/server/src/AuthDataValidator.ts#L116)
+[AuthDataValidator.ts:118](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/AuthDataValidator.ts#L118)
 
 ___
 
@@ -126,7 +126,7 @@ which is the number of seconds after which the data is considered invalid.
 
 #### Defined in
 
-[AuthDataValidator.ts:129](https://github.com/manzoorwanijk/telegram-auth/blob/bb906d2/packages/server/src/AuthDataValidator.ts#L129)
+[AuthDataValidator.ts:131](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/AuthDataValidator.ts#L131)
 
 ___
 
@@ -148,7 +148,7 @@ This function sets the throwIfEmptyData property of the class.
 
 #### Defined in
 
-[AuthDataValidator.ts:140](https://github.com/manzoorwanijk/telegram-auth/blob/bb906d2/packages/server/src/AuthDataValidator.ts#L140)
+[AuthDataValidator.ts:142](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/AuthDataValidator.ts#L142)
 
 ___
 
@@ -182,4 +182,4 @@ The validated data.
 
 #### Defined in
 
-[AuthDataValidator.ts:154](https://github.com/manzoorwanijk/telegram-auth/blob/bb906d2/packages/server/src/AuthDataValidator.ts#L154)
+[AuthDataValidator.ts:156](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/AuthDataValidator.ts#L156)
