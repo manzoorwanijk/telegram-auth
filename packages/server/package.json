@@ -48,14 +48,18 @@
 	"scripts": {
 		"build": "pnpm build:ts",
 		"build:ts": "pnpm build:esm && pnpm build:cjs",
-		"build:esm": "tsc",
-		"build:cjs": "tsc --module commonjs --outDir dist/cjs",
+		"build:esm": "tsc --project ./tsconfig.build.json",
+		"build:cjs": "tsc --project ./tsconfig.build.json --module commonjs --outDir dist/cjs",
 		"build:docs": "typedoc",
 		"dev": "tsc --watch",
 		"clean": "rimraf dist .turbo",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"test": "jest",
+		"test:watch": "jest --watch"
 	},
 	"devDependencies": {
+		"@telgram-auth/jest": "workspace:*",
+		"@types/jest": "^29.2.5",
 		"@types/node": "^18.11.17",
 		"typedoc": "^0.23.23",
 		"typescript": "^4.9.4"

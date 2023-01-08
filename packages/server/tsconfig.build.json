@@ -1,0 +1,7 @@
+{
+	"extends": "./tsconfig.json",
+	"include": [
+		// do not incldue tests in the build
+		"src"
+	]
+}

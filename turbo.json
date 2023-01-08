@@ -18,6 +18,12 @@
 		},
 		"build:docs": {
 			"dependsOn": ["^build:docs"]
+		},
+		"test": {
+			"outputs": []
+		},
+		"test:watch": {
+			"cache": false
 		}
 	},
 	"globalDependencies": ["tsconfig.json"]

@@ -29,8 +29,10 @@ export function createScript({
 	if (cornerRadius) {
 		script.setAttribute('data-radius', `${cornerRadius}`);
 	}
-	script.setAttribute('data-request-access', requestAccess);
-	script.setAttribute('data-userpic', JSON.stringify(showAvatar));
+	if (requestAccess) {
+		script.setAttribute('data-request-access', requestAccess);
+	}
+	script.setAttribute('data-userpic', JSON.stringify(Boolean(showAvatar)));
 	script.setAttribute('data-lang', lang);
 
 	if (authCallbackUrl) {
