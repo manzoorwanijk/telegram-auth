@@ -32,7 +32,7 @@ export function createScript({
 	if (requestAccess) {
 		script.setAttribute('data-request-access', requestAccess);
 	}
-	script.setAttribute('data-userpic', JSON.stringify(showAvatar));
+	script.setAttribute('data-userpic', JSON.stringify(Boolean(showAvatar)));
 	script.setAttribute('data-lang', lang);
 
 	if (authCallbackUrl) {

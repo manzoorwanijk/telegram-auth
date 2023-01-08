@@ -45,23 +45,23 @@ describe('LoginButton', () => {
 			['botUsername', ['data-telegram-login', 'SomeTestBot']],
 			['authCallbackUrl', ['data-auth-url', 'https://example.com/auth']],
 			['buttonSize', ['data-size', 'medium']],
-			['cornerRadius', ['data-radius', 10]],
+			['cornerRadius', ['data-radius', '10']],
 			['lang', ['data-lang', 'ar']],
-			['requestAccess', ['data-request-access', '']],
-			['showAvatar', ['data-userpic', false]],
+			['requestAccess', ['data-request-access', null]],
 		] as const;
 
 		const props = propsToAtts.reduce((acc, [prop, [, value]]) => ({ ...acc, [prop]: value }), baseProps);
 
-		const { container } = render(<LoginButton {...props} widgetVersion={30} />);
+		const { container } = render(<LoginButton {...props} widgetVersion={30} showAvatar={false} />);
 
 		const script = container.querySelector('script');
 
 		for (const [, [attr, value]] of propsToAtts) {
-			expect(script?.getAttribute(attr)).toBe(`${value}`);
+			expect(script?.getAttribute(attr)).toBe(value);
 		}
 		// widgetVersion should be added to the src attribute
 		expect(script?.getAttribute('src')).toBe('https://telegram.org/js/telegram-widget.js?30');
+		expect(script?.getAttribute('data-userpic')).toBe('false');
 	});
 
 	it('should pass `onAuthCallback` to the script but prefer `authCallbackUrl` if passed', async () => {
