@@ -1,12 +1,13 @@
 {
 	"name": "@telgram-auth/eslint-config",
 	"version": "1.0.0",
-	"main": "base.js",
+	"main": "recommended.js",
 	"private": true,
 	"license": "MIT",
 	"files": [
 		"base.js",
-		"ramix.js",
+		"recommended.js",
+		"remix.js",
 		"tests.js"
 	],
 	"devDependencies": {
