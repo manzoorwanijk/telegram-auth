@@ -18,7 +18,7 @@
 		"deploy": "turbo run deploy",
 		"dev": "turbo run dev --parallel",
 		"kick-off": "pnpm clean && pnpm build:p",
-		"lint": "eslint \"{packages,examples,internal}/**/*.{ts,tsx,js,jsx}\"",
+		"lint": "eslint \"{packages,examples,internal}/**/*.{ts,tsx,js,jsx,json}\"",
 		"lint:fix": "pnpm run lint -- --fix",
 		"release": "changeset publish",
 		"release:dev": "changeset publish --tag dev",

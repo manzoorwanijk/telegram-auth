@@ -9,4 +9,11 @@ module.exports = {
 		'no-unused-vars': 'off',
 		'no-console': 'warn',
 	},
+	overrides: [
+		{
+			files: ['*.json'],
+			parser: 'eslint-plugin-json-es',
+			extends: 'plugin:eslint-plugin-json-es/recommended',
+		},
+	],
 };

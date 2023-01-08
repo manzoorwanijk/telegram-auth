@@ -8,10 +8,7 @@
 		],
 		"noEmit": false,
 		"declarationDir": "dist/types",
-		"outDir": "dist/esm",
+		"outDir": "dist/esm"
 	},
-	"include": [
-		"src",
-		"tests",
-	]
+	"include": ["src", "tests"]
 }
