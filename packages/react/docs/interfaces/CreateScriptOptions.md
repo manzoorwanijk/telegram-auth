@@ -1,4 +1,4 @@
-[@telgram-auth/react](../README.md) / CreateScriptOptions
+[@telegram-auth/react](../README.md) / CreateScriptOptions
 
 # Interface: CreateScriptOptions
 
@@ -38,7 +38,7 @@ The username of the bot that will be used to authenticate the user.
 
 #### Defined in
 
-[types.ts:25](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/react/src/types.ts#L25)
+[types.ts:25](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/react/src/types.ts#L25)
 
 ___
 
@@ -54,7 +54,7 @@ The URL where the auth data from Telegram will be sent.
 
 #### Defined in
 
-[types.ts:20](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/react/src/types.ts#L20)
+[types.ts:20](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/react/src/types.ts#L20)
 
 ___
 
@@ -74,7 +74,7 @@ The size of the button.
 
 #### Defined in
 
-[types.ts:32](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/react/src/types.ts#L32)
+[types.ts:32](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/react/src/types.ts#L32)
 
 ___
 
@@ -90,7 +90,7 @@ The radius of the button corners.
 
 #### Defined in
 
-[types.ts:37](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/react/src/types.ts#L37)
+[types.ts:37](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/react/src/types.ts#L37)
 
 ___
 
@@ -110,7 +110,7 @@ The language of the button.
 
 #### Defined in
 
-[types.ts:44](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/react/src/types.ts#L44)
+[types.ts:44](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/react/src/types.ts#L44)
 
 ___
 
@@ -140,7 +140,7 @@ The callback function that will be called when the user is authenticated.
 
 #### Defined in
 
-[types.ts:49](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/react/src/types.ts#L49)
+[types.ts:49](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/react/src/types.ts#L49)
 
 ___
 
@@ -160,7 +160,7 @@ The access level that the bot will request.
 
 #### Defined in
 
-[types.ts:56](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/react/src/types.ts#L56)
+[types.ts:56](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/react/src/types.ts#L56)
 
 ___
 
@@ -180,7 +180,7 @@ true
 
 #### Defined in
 
-[types.ts:63](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/react/src/types.ts#L63)
+[types.ts:63](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/react/src/types.ts#L63)
 
 ___
 
@@ -196,4 +196,4 @@ The version of the Telegram widget to deal with browser caching.
 
 #### Defined in
 
-[types.ts:68](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/react/src/types.ts#L68)
+[types.ts:68](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/react/src/types.ts#L68)

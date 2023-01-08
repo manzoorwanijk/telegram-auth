@@ -1,6 +1,6 @@
 import NextAuth, { NextAuthOptions } from 'next-auth';
 import CredentialsProvider from 'next-auth/providers/credentials';
-import { objectToAuthDataMap, AuthDataValidator } from '@telgram-auth/server';
+import { objectToAuthDataMap, AuthDataValidator } from '@telegram-auth/server';
 
 export const authOptions: NextAuthOptions = {
 	providers: [

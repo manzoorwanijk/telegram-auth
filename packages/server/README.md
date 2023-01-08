@@ -1,8 +1,8 @@
-# @telgram-auth/server
+# @telegram-auth/server
 
 _Zero dependency package to validate the data received from Telegram Login Widget or Web App, compatible with Node, serverless edge networks and web workers._
 
-`@telgram-auth/server` exports a TS/JS class ([`AuthDataValidator`](./docs/classes/AuthDataValidator.md)) to validate the data received from [Telegram Login Widget](https://core.telegram.org/widgets/login#checking-authorization) and [Telegram Web Apps](https://core.telegram.org/bots/webapps#validating-data-received-via-the-web-app).
+`@telegram-auth/server` exports a TS/JS class ([`AuthDataValidator`](./docs/classes/AuthDataValidator.md)) to validate the data received from [Telegram Login Widget](https://core.telegram.org/widgets/login#checking-authorization) and [Telegram Web Apps](https://core.telegram.org/bots/webapps#validating-data-received-via-the-web-app).
 It also exports some [utility functions](./docs/README.md#functions) to prepare the data for validation.
 
 ## Documentation
@@ -13,20 +13,20 @@ It also exports some [utility functions](./docs/README.md#functions) to prepare 
 
 ```sh
 # npm
-npm install @telgram-auth/server
+npm install @telegram-auth/server
 
 # yarn
-yarn add @telgram-auth/server
+yarn add @telegram-auth/server
 
 # with pnpm
-pnpm add @telgram-auth/server
+pnpm add @telegram-auth/server
 ```
 
 ## Usage
 
 <!-- prettier-ignore -->
 ```ts title=validate.ts
-import { urlStrToAuthDataMap, AuthDataValidator } from '@telgram-auth/server';
+import { urlStrToAuthDataMap, AuthDataValidator } from '@telegram-auth/server';
 
 // initialize the validator with your bot token
 const validator = new AuthDataValidator({ botToken: process.env.BOT_TOKEN });

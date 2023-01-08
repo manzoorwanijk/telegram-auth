@@ -24,8 +24,8 @@ importers:
 
   examples/next-auth:
     specifiers:
-      '@telgram-auth/react': '*'
-      '@telgram-auth/server': '*'
+      '@telegram-auth/react': '*'
+      '@telegram-auth/server': '*'
       '@types/node': ^17
       '@types/react': ^18.0.15
       next: latest
@@ -35,8 +35,8 @@ importers:
       react-dom: ^18.2.0
       typescript: ^4
     dependencies:
-      '@telgram-auth/react': 1.0.0_react@18.2.0
-      '@telgram-auth/server': 1.0.0
+      '@telegram-auth/react': link:../../packages/react
+      '@telegram-auth/server': link:../../packages/server
       next: 13.1.1_biqbaboplfbrettd7655fr4n2y
       next-auth: 4.18.8_mibeyvivfhhmvvbkd4wwrgzcom
       nodemailer: 6.8.0
@@ -53,8 +53,8 @@ importers:
       '@remix-run/node': ^1.9.0
       '@remix-run/react': ^1.9.0
       '@remix-run/serve': ^1.9.0
-      '@telgram-auth/react': '*'
-      '@telgram-auth/server': '*'
+      '@telegram-auth/react': '*'
+      '@telegram-auth/server': '*'
       '@types/react': ^18.0.26
       '@types/react-dom': ^18.0.10
       isbot: ^3.6.5
@@ -65,8 +65,8 @@ importers:
       '@remix-run/node': 1.9.0_biqbaboplfbrettd7655fr4n2y
       '@remix-run/react': 1.9.0_biqbaboplfbrettd7655fr4n2y
       '@remix-run/serve': 1.9.0_biqbaboplfbrettd7655fr4n2y
-      '@telgram-auth/react': 1.0.0_react@18.2.0
-      '@telgram-auth/server': 1.0.0
+      '@telegram-auth/react': link:../../packages/react
+      '@telegram-auth/server': link:../../packages/server
       isbot: 3.6.5
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -2707,18 +2707,6 @@ packages:
     dependencies:
       defer-to-connect: 2.0.1
     dev: true
-
-  /@telgram-auth/react/1.0.0_react@18.2.0:
-    resolution: {integrity: sha512-dqXNL8kW2+Bet0xT2DHipUi0Rky1j+wwY9j5DWz/Ps5Zrm9ork/j9YA5TShVltZNKOb04TfrDdFHBavxhPaPtA==}
-    peerDependencies:
-      react: '>=18'
-    dependencies:
-      react: 18.2.0
-    dev: false
-
-  /@telgram-auth/server/1.0.0:
-    resolution: {integrity: sha512-mE9n1KN+4+LMUsqLoFIvtHkN0qgJSFmkNFbS8Nx84nx3oBJN7ON33jpubjVEOcguroQvCdfe93ikjtClFrAh5w==}
-    dev: false
 
   /@testing-library/dom/8.19.1:
     resolution: {integrity: sha512-P6iIPyYQ+qH8CvGauAqanhVnjrnRe0IZFSYCeGkSRW9q3u8bdVn2NPI+lasFyVsEQn1J/IFmp5Aax41+dAP9wg==}

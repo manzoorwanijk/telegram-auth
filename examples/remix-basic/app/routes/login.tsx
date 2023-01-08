@@ -1,7 +1,7 @@
 import { json, redirect } from '@remix-run/node';
 import { useLoaderData } from '@remix-run/react';
 import type { LoaderArgs, ActionFunction } from '@remix-run/node';
-import { LoginButton } from '@telgram-auth/react';
+import { LoginButton } from '@telegram-auth/react';
 
 import { getSession, commitSession, destroySession } from '../sessions';
 

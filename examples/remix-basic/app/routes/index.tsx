@@ -3,7 +3,7 @@ import { Link, Form } from '@remix-run/react';
 import { useLoaderData } from '@remix-run/react';
 import type { LoaderArgs } from '@remix-run/node';
 import { getSession, commitSession } from '../sessions';
-import type { TelegramAuthData } from '@telgram-auth/react';
+import type { TelegramAuthData } from '@telegram-auth/react';
 
 export async function loader({ request }: LoaderArgs) {
 	const session = await getSession(request.headers.get('Cookie'));

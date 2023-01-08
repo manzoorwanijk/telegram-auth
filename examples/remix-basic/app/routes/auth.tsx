@@ -1,6 +1,6 @@
 import { redirect } from '@remix-run/node';
 import type { LoaderArgs } from '@remix-run/node';
-import { urlStrToAuthDataMap, AuthDataValidator } from '@telgram-auth/server';
+import { urlStrToAuthDataMap, AuthDataValidator } from '@telegram-auth/server';
 
 import { getSession, commitSession } from '../sessions';
 
