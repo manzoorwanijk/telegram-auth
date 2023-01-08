@@ -29,7 +29,7 @@ https://core.telegram.org/widgets/login#receiving-authorization-data
 
 #### Defined in
 
-[utils/types.ts:12](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/utils/types.ts#L12)
+[utils/types.ts:12](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/server/src/utils/types.ts#L12)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[utils/types.ts:13](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/utils/types.ts#L13)
+[utils/types.ts:13](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/server/src/utils/types.ts#L13)
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 #### Defined in
 
-[utils/types.ts:14](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/utils/types.ts#L14)
+[utils/types.ts:14](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/server/src/utils/types.ts#L14)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[utils/types.ts:15](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/utils/types.ts#L15)
+[utils/types.ts:15](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/server/src/utils/types.ts#L15)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[utils/types.ts:16](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/utils/types.ts#L16)
+[utils/types.ts:16](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/server/src/utils/types.ts#L16)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[utils/types.ts:18](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/utils/types.ts#L18)
+[utils/types.ts:18](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/server/src/utils/types.ts#L18)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[utils/types.ts:19](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/utils/types.ts#L19)
+[utils/types.ts:19](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/server/src/utils/types.ts#L19)
 
 ___
 
@@ -99,4 +99,4 @@ ___
 
 #### Defined in
 
-[utils/types.ts:20](https://github.com/manzoorwanijk/telegram-auth/blob/7c2bc06/packages/server/src/utils/types.ts#L20)
+[utils/types.ts:20](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/server/src/utils/types.ts#L20)
