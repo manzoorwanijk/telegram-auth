@@ -13,7 +13,7 @@
 	"scripts": {
 		"build": "turbo run build",
 		"build:p": "turbo run build --filter=./packages/*",
-		"buuild:docs": "turbo run build:docs",
+		"build:docs": "turbo run build:docs",
 		"clean": "turbo run clean",
 		"deploy": "turbo run deploy",
 		"dev": "turbo run dev --parallel",
