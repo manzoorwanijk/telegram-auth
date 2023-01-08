@@ -53,7 +53,7 @@ export interface LoginButtonProps {
 	 *
 	 * @default "write"
 	 */
-	requestAccess?: 'write';
+	requestAccess?: 'write' | null;
 
 	/**
 	 * Whether to show the user's avatar.
@@ -65,7 +65,7 @@ export interface LoginButtonProps {
 	/**
 	 * The version of the Telegram widget to deal with browser caching.
 	 */
-	widgetVersion?: number;
+	widgetVersion?: number | string;
 }
 
 /**
