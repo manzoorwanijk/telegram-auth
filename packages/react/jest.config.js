@@ -1,4 +1,4 @@
-const baseConfig = require('@telgram-auth/jest/jest.config.dom');
+const baseConfig = require('@telegram-auth/jest/jest.config.dom');
 
 /**
  * @type {import('ts-jest').JestConfigWithTsJest}
