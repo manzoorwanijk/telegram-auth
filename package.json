@@ -22,7 +22,7 @@
 		"lint:fix": "pnpm run lint -- --fix",
 		"release": "changeset publish",
 		"release:dev": "changeset publish --tag dev",
-		"test": "jest",
+		"test": "turbo run test",
 		"typecheck": "tsc --noEmit",
 		"version": "changeset version",
 		"version:dev": "changeset version --snapshot dev"

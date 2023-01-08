@@ -51,7 +51,8 @@
 		"dev": "tsc --watch",
 		"clean": "rimraf dist .turbo",
 		"typecheck": "tsc --noEmit",
-		"test": "jest"
+		"test": "jest",
+		"test:watch": "jest --watch"
 	},
 	"peerDependencies": {
 		"react": ">=18"
