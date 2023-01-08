@@ -1,6 +1,6 @@
 import { GetServerSidePropsContext } from 'next';
 import { signIn, getCsrfToken, getProviders } from 'next-auth/react';
-import { LoginButton } from '@telgram-auth/react';
+import { LoginButton } from '@telegram-auth/react';
 
 const Signin = ({
 	providers,

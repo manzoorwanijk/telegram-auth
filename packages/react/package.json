@@ -1,5 +1,5 @@
 {
-	"name": "@telgram-auth/react",
+	"name": "@telegram-auth/react",
 	"version": "1.0.0",
 	"description": "React component to display Telegram Login Widget",
 	"keywords": [
@@ -58,7 +58,7 @@
 		"react": ">=18"
 	},
 	"devDependencies": {
-		"@telgram-auth/jest": "workspace:*",
+		"@telegram-auth/jest": "workspace:*",
 		"@testing-library/dom": "^8.19.1",
 		"@testing-library/jest-dom": "5.16.5",
 		"@testing-library/react": "^13.4.0",

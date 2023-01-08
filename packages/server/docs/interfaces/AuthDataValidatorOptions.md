@@ -1,4 +1,4 @@
-[@telgram-auth/server](../README.md) / AuthDataValidatorOptions
+[@telegram-auth/server](../README.md) / AuthDataValidatorOptions
 
 # Interface: AuthDataValidatorOptions
 
@@ -24,7 +24,7 @@ If you don't pass this here, you'll need to set it later using `setBotToken()`.
 
 #### Defined in
 
-[AuthDataValidator.ts:10](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/server/src/AuthDataValidator.ts#L10)
+[AuthDataValidator.ts:10](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/server/src/AuthDataValidator.ts#L10)
 
 ___
 
@@ -40,7 +40,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto
 
 #### Defined in
 
-[AuthDataValidator.ts:17](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/server/src/AuthDataValidator.ts#L17)
+[AuthDataValidator.ts:17](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/server/src/AuthDataValidator.ts#L17)
 
 ___
 
@@ -52,7 +52,7 @@ The encoder to be used for encoding the data
 
 #### Defined in
 
-[AuthDataValidator.ts:22](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/server/src/AuthDataValidator.ts#L22)
+[AuthDataValidator.ts:22](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/server/src/AuthDataValidator.ts#L22)
 
 ___
 
@@ -68,7 +68,7 @@ The time in seconds after which the data should be considered invalid
 
 #### Defined in
 
-[AuthDataValidator.ts:29](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/server/src/AuthDataValidator.ts#L29)
+[AuthDataValidator.ts:29](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/server/src/AuthDataValidator.ts#L29)
 
 ___
 
@@ -84,4 +84,4 @@ true
 
 #### Defined in
 
-[AuthDataValidator.ts:36](https://github.com/manzoorwanijk/telegram-auth/blob/58b2f5a/packages/server/src/AuthDataValidator.ts#L36)
+[AuthDataValidator.ts:36](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/server/src/AuthDataValidator.ts#L36)

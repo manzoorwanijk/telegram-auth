@@ -3,6 +3,6 @@
  */
 module.exports = {
 	root: true,
-	// This tells ESLint to load the config from the package `@telgram-auth/eslint-config`
-	extends: ['@telgram-auth/eslint-config/recommended'],
+	// This tells ESLint to load the config from the package `@telegram-auth/eslint-config`
+	extends: ['@telegram-auth/eslint-config/recommended'],
 };

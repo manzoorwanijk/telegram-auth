@@ -1,4 +1,4 @@
-# @telgram-auth/server Change Log
+# @telegram-auth/server Change Log
 
 ## 1.0.0
 

@@ -1,5 +1,5 @@
 {
-	"name": "@telgram/auth",
+	"name": "@telegram/auth",
 	"private": true,
 	"repository": {
 		"type": "git",
@@ -30,7 +30,7 @@
 	"devDependencies": {
 		"@changesets/changelog-github": "0.4.6",
 		"@changesets/cli": "2.24.1",
-		"@telgram-auth/eslint-config": "workspace:*",
+		"@telegram-auth/eslint-config": "workspace:*",
 		"eslint": "^8.30.0",
 		"prettier": "^2.8.1",
 		"rimraf": "^3.0.2",

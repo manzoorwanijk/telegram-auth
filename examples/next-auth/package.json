@@ -1,5 +1,5 @@
 {
-	"name": "@telgram-auth/example-next-auth",
+	"name": "@telegram-auth/example-next-auth",
 	"private": true,
 	"scripts": {
 		"dev": "next",
@@ -9,8 +9,8 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@telgram-auth/react": "*",
-		"@telgram-auth/server": "*",
+		"@telegram-auth/react": "*",
+		"@telegram-auth/server": "*",
 		"next": "latest",
 		"next-auth": "latest",
 		"nodemailer": "^6",

@@ -1,6 +1,6 @@
-# @telgram-auth/react
+# @telegram-auth/react
 
-`@telgram-auth/react` exports a React component to render a Telegram Login button using [Telegram Login Widget](https://core.telegram.org/widgets/login).
+`@telegram-auth/react` exports a React component to render a Telegram Login button using [Telegram Login Widget](https://core.telegram.org/widgets/login).
 
 ## Documentation
 
@@ -10,13 +10,13 @@
 
 ```sh
 # npm
-npm install @telgram-auth/react
+npm install @telegram-auth/react
 
 # yarn
-yarn add @telgram-auth/react
+yarn add @telegram-auth/react
 
 # with pnpm
-pnpm add @telgram-auth/react
+pnpm add @telegram-auth/react
 ```
 
 ## Usage
@@ -27,7 +27,7 @@ If you specify `authCallbackUrl`, the user will be redirected to the specified U
 
 <!-- prettier-ignore -->
 ```tsx title=src/App.tsx
-import { LoginButton } from '@telgram-auth/react';
+import { LoginButton } from '@telegram-auth/react';
 
 function App() {
     return (
@@ -49,7 +49,7 @@ function App() {
 
 <!-- prettier-ignore -->
 ```jsx title=src/App.jsx
-import { LoginButton } from '@telgram-auth/react';
+import { LoginButton } from '@telegram-auth/react';
 
 function App() {
     return (
@@ -72,7 +72,7 @@ You can use [`@telegram-auth/server`](../server) server-side to validate the dat
 
 <!-- prettier-ignore -->
 ```ts title=validate.ts
-import { urlStrToAuthDataMap, AuthDataValidator } from '@telgram-auth/server';
+import { urlStrToAuthDataMap, AuthDataValidator } from '@telegram-auth/server';
 
 const validator = new AuthDataValidator({ botToken: process.env.BOT_TOKEN });
 

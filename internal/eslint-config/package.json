@@ -1,5 +1,5 @@
 {
-	"name": "@telgram-auth/eslint-config",
+	"name": "@telegram-auth/eslint-config",
 	"version": "1.0.0",
 	"main": "recommended.js",
 	"private": true,

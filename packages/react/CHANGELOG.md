@@ -1,4 +1,4 @@
-# @telgram-auth/react Change Log
+# @telegram-auth/react Change Log
 
 ## 1.0.0
 
