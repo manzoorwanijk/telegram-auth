@@ -1,10 +1,9 @@
-const baseConfig = require('@telgram-auth/jest/jest.config.node');
-
 /**
  * @type {import('ts-jest').JestConfigWithTsJest}
  */
 const config = {
-	...baseConfig,
+	...require('./jest.config'),
+	testEnvironment: 'node',
 };
 
 module.exports = config;
