@@ -1,5 +1,5 @@
 {
-	"name": "@telgram-auth/example-next-auth",
+	"name": "@telegram-auth/example-next-auth",
 	"private": true,
 	"scripts": {
 		"dev": "next",

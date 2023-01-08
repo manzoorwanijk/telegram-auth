@@ -1,5 +1,5 @@
 {
-	"name": "@telgram-auth/server",
+	"name": "@telegram-auth/server",
 	"version": "1.0.0",
 	"description": "Zero dependency package to validate data received from Telegram Login Widget",
 	"keywords": [
@@ -58,7 +58,7 @@
 		"test:watch": "jest --watch"
 	},
 	"devDependencies": {
-		"@telgram-auth/jest": "workspace:*",
+		"@telegram-auth/jest": "workspace:*",
 		"@types/jest": "^29.2.5",
 		"@types/node": "^18.11.17",
 		"typedoc": "^0.23.23",

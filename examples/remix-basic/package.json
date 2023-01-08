@@ -1,5 +1,5 @@
 {
-	"name": "@telgram-auth/example-remix-basic",
+	"name": "@telegram-auth/example-remix-basic",
 	"private": true,
 	"sideEffects": false,
 	"scripts": {

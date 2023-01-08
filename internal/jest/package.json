@@ -1,5 +1,5 @@
 {
-	"name": "@telgram-auth/jest",
+	"name": "@telegram-auth/jest",
 	"version": "1.0.0",
 	"main": "jest.config.js",
 	"private": true,
