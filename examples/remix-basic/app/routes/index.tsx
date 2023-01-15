@@ -23,7 +23,7 @@ export default function Index() {
 	const { user } = useLoaderData<typeof loader>();
 
 	return (
-		<div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
+		<div className="center">
 			{user ? (
 				<>
 					<h1>Hello {user.first_name}</h1>
