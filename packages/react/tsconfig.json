@@ -7,5 +7,5 @@
 		"declarationDir": "dist/types",
 		"outDir": "dist/esm"
 	},
-	"include": ["src"]
+	"include": ["src", "tests"]
 }
