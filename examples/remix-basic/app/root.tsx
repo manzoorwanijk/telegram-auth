@@ -1,6 +1,8 @@
 import type { MetaFunction } from '@remix-run/node';
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from '@remix-run/react';
 
+import styles from './style.css';
+
 export const meta: MetaFunction = () => ({
 	charset: 'utf-8',
 	title: 'New Remix App',
@@ -15,11 +17,17 @@ export default function App() {
 				<Links />
 			</head>
 			<body>
-				<Outlet />
-				<ScrollRestoration />
-				<Scripts />
-				<LiveReload />
+				<div id="root">
+					<Outlet />
+					<ScrollRestoration />
+					<Scripts />
+					<LiveReload />
+				</div>
 			</body>
 		</html>
 	);
+}
+
+export function links() {
+	return [{ rel: 'stylesheet', href: styles }];
 }

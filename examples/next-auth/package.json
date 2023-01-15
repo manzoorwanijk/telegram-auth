@@ -9,8 +9,12 @@
 		"typecheck": "tsc --noEmit"
 	},
 	"dependencies": {
+		"@chakra-ui/react": "^2.4.7",
+		"@emotion/react": "^11",
+		"@emotion/styled": "^11",
 		"@telegram-auth/react": "*",
 		"@telegram-auth/server": "*",
+		"framer-motion": "^6",
 		"next": "latest",
 		"next-auth": "latest",
 		"nodemailer": "^6",

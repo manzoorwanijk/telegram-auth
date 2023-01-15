@@ -1,5 +1,5 @@
 import { json, redirect } from '@remix-run/node';
-import { useLoaderData } from '@remix-run/react';
+import { useLoaderData, Link } from '@remix-run/react';
 import type { LoaderArgs, ActionFunction } from '@remix-run/node';
 import { LoginButton } from '@telegram-auth/react';
 
@@ -37,10 +37,15 @@ export default function Login() {
 	const { botUsername, error } = useLoaderData();
 
 	return (
-		<div>
+		<div className="center">
 			{error ? <div className="error">{error}</div> : null}
 			<br />
-			<LoginButton botUsername={botUsername} authCallbackUrl="/auth" />
+			<div className="telegram-login">
+				<LoginButton botUsername={botUsername} authCallbackUrl="/auth" />
+			</div>
+			<p>
+				Go to <Link to="/">Home page</Link>
+			</p>
 		</div>
 	);
 }

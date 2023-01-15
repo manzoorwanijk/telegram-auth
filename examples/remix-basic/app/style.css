@@ -1,0 +1,21 @@
+body,
+html {
+	height: 100%;
+}
+
+#root {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: system-ui, sans-serif;
+	line-height: 1.4;
+}
+
+.center {
+	text-align: center;
+}
+
+.error {
+	color: #ff0000;
+}

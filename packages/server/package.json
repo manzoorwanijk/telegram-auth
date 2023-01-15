@@ -45,22 +45,28 @@
 	"bugs": {
 		"url": "https://github.com/manzoorwanijk/telegram-auth/issues"
 	},
+	"clean-package": "../../config/clean-package.json",
 	"scripts": {
 		"build": "pnpm build:ts",
-		"build:ts": "pnpm build:esm && pnpm build:cjs",
-		"build:esm": "tsc --project ./tsconfig.build.json",
 		"build:cjs": "tsc --project ./tsconfig.build.json --module commonjs --outDir dist/cjs",
 		"build:docs": "typedoc",
-		"dev": "tsc --watch",
+		"build:esm": "tsc --project ./tsconfig.build.json",
+		"build:ts": "pnpm build:esm && pnpm build:cjs",
 		"clean": "rimraf dist .turbo",
-		"typecheck": "tsc --noEmit",
-		"test": "jest",
-		"test:watch": "jest --watch"
+		"dev": "tsc --watch",
+		"postpack": "clean-package restore",
+		"prepack": "clean-package",
+		"test": "pnpm run test:node && pnpm run test:cf",
+		"test:cf": "jest --env=miniflare",
+		"test:node": "jest --env=node",
+		"test:watch": "jest --watch",
+		"typecheck": "tsc --noEmit"
 	},
 	"devDependencies": {
 		"@telegram-auth/jest": "workspace:*",
 		"@types/jest": "^29.2.5",
 		"@types/node": "^18.11.17",
+		"clean-package": "^2.2.0",
 		"typedoc": "^0.23.23",
 		"typedoc-plugin-markdown": "^3.14.0",
 		"typedoc-plugin-mdn-links": "^2.0.2",
