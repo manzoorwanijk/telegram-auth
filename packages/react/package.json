@@ -42,20 +42,23 @@
 	"bugs": {
 		"url": "https://github.com/manzoorwanijk/telegram-auth/issues"
 	},
-	"scripts": {
-		"build": "pnpm build:ts",
-		"build:ts": "pnpm build:esm && pnpm build:cjs",
-		"build:esm": "tsc --project ./tsconfig.build.json",
-		"build:cjs": "tsc --project ./tsconfig.build.json --module commonjs --outDir dist/cjs",
-		"build:docs": "typedoc",
-		"dev": "tsc --watch",
-		"clean": "rimraf dist .turbo",
-		"typecheck": "tsc --noEmit",
-		"test": "jest",
-		"test:watch": "jest --watch"
-	},
+	"clean-package": "../../config/clean-package.json",
 	"peerDependencies": {
 		"react": ">=18"
+	},
+	"scripts": {
+		"build": "pnpm build:ts",
+		"build:cjs": "tsc --project ./tsconfig.build.json --module commonjs --outDir dist/cjs",
+		"build:docs": "typedoc",
+		"build:esm": "tsc --project ./tsconfig.build.json",
+		"build:ts": "pnpm build:esm && pnpm build:cjs",
+		"clean": "rimraf dist .turbo",
+		"dev": "tsc --watch",
+		"postpack": "clean-package restore",
+		"prepack": "clean-package",
+		"test": "jest",
+		"test:watch": "jest --watch",
+		"typecheck": "tsc --noEmit"
 	},
 	"devDependencies": {
 		"@telegram-auth/jest": "workspace:*",
@@ -65,6 +68,7 @@
 		"@types/jest": "^29.2.5",
 		"@types/react": "^18.0.26",
 		"@types/react-dom": "^18.0.10",
+		"clean-package": "^2.2.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"typedoc": "^0.23.23",

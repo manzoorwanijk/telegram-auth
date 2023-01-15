@@ -1,0 +1,4 @@
+{
+	"indent": "\t",
+	"remove": ["devDependencies", "clean-package"]
+}
