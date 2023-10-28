@@ -1,6 +1,6 @@
 {
 	"name": "@telegram-auth/server",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Zero dependency package to validate data received from Telegram Login Widget",
 	"keywords": [
 		"telegram",
