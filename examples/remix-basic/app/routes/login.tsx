@@ -1,11 +1,11 @@
 import { json, redirect } from '@remix-run/node';
 import { useLoaderData, Link } from '@remix-run/react';
-import type { LoaderArgs, ActionFunction } from '@remix-run/node';
+import type { LoaderFunction, ActionFunction } from '@remix-run/node';
 import { LoginButton } from '@telegram-auth/react';
 
 import { getSession, commitSession, destroySession } from '../sessions';
 
-export async function loader({ request }: LoaderArgs) {
+export const loader: LoaderFunction = async ({ request }) => {
 	const session = await getSession(request.headers.get('Cookie'));
 
 	if (session.has('user')) {
@@ -21,7 +21,7 @@ export async function loader({ request }: LoaderArgs) {
 			'Set-Cookie': await commitSession(session),
 		},
 	});
-}
+};
 
 export const action: ActionFunction = async ({ request }) => {
 	const session = await getSession(request.headers.get('Cookie'));
@@ -34,7 +34,7 @@ export const action: ActionFunction = async ({ request }) => {
 };
 
 export default function Login() {
-	const { botUsername, error } = useLoaderData();
+	const { botUsername, error } = useLoaderData<typeof loader>();
 
 	return (
 		<div className="center">

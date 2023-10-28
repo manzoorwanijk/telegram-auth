@@ -28,14 +28,14 @@
 		"version:dev": "changeset version --snapshot dev"
 	},
 	"devDependencies": {
-		"@changesets/changelog-github": "0.4.6",
-		"@changesets/cli": "2.24.1",
+		"@changesets/changelog-github": "0.4.8",
+		"@changesets/cli": "2.26.2",
 		"@telegram-auth/eslint-config": "workspace:*",
-		"eslint": "^8.30.0",
-		"prettier": "^2.8.1",
-		"rimraf": "^3.0.2",
-		"turbo": "^1.6.3",
-		"typescript": "^4.9.4"
+		"eslint": "^8.52.0",
+		"prettier": "^3.0.3",
+		"rimraf": "^5.0.5",
+		"turbo": "^1.10.16",
+		"typescript": "^5.2.2"
 	},
 	"workspaces": [
 		"examples/*",

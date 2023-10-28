@@ -9,7 +9,7 @@
 		"inlineSources": false,
 		"isolatedModules": true,
 		"lib": ["ESNext"],
-		"module": "ESNext",
+		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
 		"newLine": "lf",
 		"noEmit": true,
