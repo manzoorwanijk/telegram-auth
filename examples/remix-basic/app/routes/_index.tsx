@@ -1,11 +1,11 @@
 import { json } from '@remix-run/node';
 import { Link, Form } from '@remix-run/react';
 import { useLoaderData } from '@remix-run/react';
-import type { LoaderArgs } from '@remix-run/node';
+import type { LoaderFunction } from '@remix-run/node';
 import { getSession, commitSession } from '../sessions';
 import type { TelegramAuthData } from '@telegram-auth/react';
 
-export async function loader({ request }: LoaderArgs) {
+export const loader: LoaderFunction = async ({ request }) => {
 	const session = await getSession(request.headers.get('Cookie'));
 
 	const user: TelegramAuthData = session.get('user');
@@ -17,7 +17,7 @@ export async function loader({ request }: LoaderArgs) {
 			'Set-Cookie': await commitSession(session),
 		},
 	});
-}
+};
 
 export default function Index() {
 	const { user } = useLoaderData<typeof loader>();

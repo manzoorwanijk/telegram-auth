@@ -1,11 +1,10 @@
 import { redirect } from '@remix-run/node';
-import type { LoaderArgs } from '@remix-run/node';
+import type { LoaderFunction } from '@remix-run/node';
 import { urlStrToAuthDataMap, AuthDataValidator } from '@telegram-auth/server';
-
 import { getSession, commitSession } from '../sessions';
 
-export async function loader({ request }: LoaderArgs) {
-	const validator = new AuthDataValidator({ botToken: `${process.env.BOT_TOKEN}ok` });
+export const loader: LoaderFunction = async ({ request }) => {
+	const validator = new AuthDataValidator({ botToken: `${process.env.BOT_TOKEN}` });
 
 	const session = await getSession(request.headers.get('Cookie'));
 
@@ -32,4 +31,4 @@ export async function loader({ request }: LoaderArgs) {
 			'Set-Cookie': await commitSession(session),
 		},
 	});
-}
+};

@@ -10,4 +10,6 @@ mjs/
 umd/
 *.d.ts
 .next
++.turbo
+.cache
 **/pnpm-lock.yaml
