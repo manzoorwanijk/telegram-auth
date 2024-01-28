@@ -22,8 +22,5 @@
 		"prettier": "^3.0.3",
 		"react": "^18.2.0",
 		"typescript": "^5.2.2"
-	},
-	"publishConfig": {
-		"access": "public"
 	}
 }
