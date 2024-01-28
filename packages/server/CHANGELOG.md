@@ -1,5 +1,11 @@
 # @telegram-auth/server Change Log
 
+## 1.0.3
+
+### Patch Changes
+
+- [#22](https://github.com/manzoorwanijk/telegram-auth/pull/22) [`0444dc6`](https://github.com/manzoorwanijk/telegram-auth/commit/0444dc663acae11117a44cc4284a9f773a758328) Thanks [@manzoorwanijk](https://github.com/manzoorwanijk)! - Updated docs
+
 ## 1.0.2
 
 ### Patch Changes
