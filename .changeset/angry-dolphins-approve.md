@@ -3,4 +3,4 @@
 '@telegram-auth/react': patch
 ---
 
-Fixed npm TS types
+Fixed npm TS types for CJS
