@@ -26,7 +26,8 @@ pnpm add @telegram-auth/server
 
 <!-- prettier-ignore -->
 ```ts title=validate.ts
-import { urlStrToAuthDataMap, AuthDataValidator } from '@telegram-auth/server';
+import { AuthDataValidator } from '@telegram-auth/server';
+import { urlStrToAuthDataMap } from '@telegram-auth/server/utils';
 
 // initialize the validator with your bot token
 const validator = new AuthDataValidator({ botToken: process.env.BOT_TOKEN });

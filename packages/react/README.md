@@ -72,7 +72,8 @@ You can use [`@telegram-auth/server`](../server) server-side to validate the dat
 
 <!-- prettier-ignore -->
 ```ts title=validate.ts
-import { urlStrToAuthDataMap, AuthDataValidator } from '@telegram-auth/server';
+import { AuthDataValidator } from '@telegram-auth/server';
+import { urlStrToAuthDataMap } from '@telegram-auth/server/utils';
 
 const validator = new AuthDataValidator({ botToken: process.env.BOT_TOKEN });
 
