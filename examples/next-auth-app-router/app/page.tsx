@@ -8,7 +8,7 @@ export default async function Home() {
 	if (!session) {
 		return (
 			<Box>
-				<Heading as="h1">Not logged in to see this</Heading>
+				<Heading as="h1">Not logged in to see what is here</Heading>
 			</Box>
 		);
 	}
