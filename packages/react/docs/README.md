@@ -4,16 +4,16 @@
 
 ## Table of contents
 
-### Functions
-
-- [LoginButton](README.md#loginbutton)
-- [createScript](README.md#createscript)
-
 ### Interfaces
 
 - [TelegramAuthData](interfaces/TelegramAuthData.md)
 - [LoginButtonProps](interfaces/LoginButtonProps.md)
 - [CreateScriptOptions](interfaces/CreateScriptOptions.md)
+
+### Functions
+
+- [LoginButton](README.md#loginbutton)
+- [createScript](README.md#createscript)
 
 ## Functions
 
@@ -22,10 +22,6 @@
 ▸ **LoginButton**(`props`): `Element`
 
 A React component that renders a Telegram login button.
-
-**`See`**
-
-https://core.telegram.org/widgets/login
 
 #### Parameters
 
@@ -39,9 +35,13 @@ https://core.telegram.org/widgets/login
 
 A React component that renders the Telegram login button.
 
+**`See`**
+
+https://core.telegram.org/widgets/login
+
 #### Defined in
 
-[LoginButton.tsx:23](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/react/src/LoginButton.tsx#L23)
+[LoginButton.tsx:23](https://github.com/manzoorwanijk/telegram-auth/blob/5d7eb0c/packages/react/src/LoginButton.tsx#L23)
 
 ___
 
@@ -50,10 +50,6 @@ ___
 ▸ **createScript**(`options`): [`HTMLScriptElement`]( https://developer.mozilla.org/en-US/docs/Web/API/HTMLScriptElement )
 
 It creates a script tag with the right attributes to load the Telegram widget
-
-**`See`**
-
-https://core.telegram.org/widgets/login
 
 #### Parameters
 
@@ -67,6 +63,10 @@ https://core.telegram.org/widgets/login
 
 A script element
 
+**`See`**
+
+https://core.telegram.org/widgets/login
+
 #### Defined in
 
-[createScript.ts:11](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/react/src/createScript.ts#L11)
+[createScript.ts:11](https://github.com/manzoorwanijk/telegram-auth/blob/5d7eb0c/packages/react/src/createScript.ts#L11)

@@ -37,7 +37,7 @@ https://core.telegram.org/widgets/login#checking-authorization
 
 #### Defined in
 
-[AuthDataValidator.ts:55](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/server/src/AuthDataValidator.ts#L55)
+[AuthDataValidator.ts:56](https://github.com/manzoorwanijk/telegram-auth/blob/5d7eb0c/packages/server/src/AuthDataValidator.ts#L56)
 
 ## Methods
 
@@ -59,7 +59,7 @@ Sets the bot token to be used for validating the data
 
 #### Defined in
 
-[AuthDataValidator.ts:96](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/server/src/AuthDataValidator.ts#L96)
+[AuthDataValidator.ts:97](https://github.com/manzoorwanijk/telegram-auth/blob/5d7eb0c/packages/server/src/AuthDataValidator.ts#L97)
 
 ___
 
@@ -81,7 +81,7 @@ Sets the crypto to be used for validating the data
 
 #### Defined in
 
-[AuthDataValidator.ts:107](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/server/src/AuthDataValidator.ts#L107)
+[AuthDataValidator.ts:108](https://github.com/manzoorwanijk/telegram-auth/blob/5d7eb0c/packages/server/src/AuthDataValidator.ts#L108)
 
 ___
 
@@ -103,7 +103,7 @@ Sets the encoder to be used for encoding the data
 
 #### Defined in
 
-[AuthDataValidator.ts:118](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/server/src/AuthDataValidator.ts#L118)
+[AuthDataValidator.ts:119](https://github.com/manzoorwanijk/telegram-auth/blob/5d7eb0c/packages/server/src/AuthDataValidator.ts#L119)
 
 ___
 
@@ -126,7 +126,7 @@ which is the number of seconds after which the data is considered invalid.
 
 #### Defined in
 
-[AuthDataValidator.ts:131](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/server/src/AuthDataValidator.ts#L131)
+[AuthDataValidator.ts:132](https://github.com/manzoorwanijk/telegram-auth/blob/5d7eb0c/packages/server/src/AuthDataValidator.ts#L132)
 
 ___
 
@@ -148,7 +148,7 @@ This function sets the throwIfEmptyData property of the class.
 
 #### Defined in
 
-[AuthDataValidator.ts:142](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/server/src/AuthDataValidator.ts#L142)
+[AuthDataValidator.ts:143](https://github.com/manzoorwanijk/telegram-auth/blob/5d7eb0c/packages/server/src/AuthDataValidator.ts#L143)
 
 ___
 
@@ -157,10 +157,6 @@ ___
 ▸ **validate**<`T`\>(`authDataMap`): [`Promise`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise )<`T`\>
 
 It takes a map of auth data received from Telegram, and returns the data if it's valid
-
-**`See`**
-
-https://core.telegram.org/widgets/login#checking-authorization
 
 #### Type parameters
 
@@ -180,6 +176,10 @@ https://core.telegram.org/widgets/login#checking-authorization
 
 The validated data.
 
+**`See`**
+
+https://core.telegram.org/widgets/login#checking-authorization
+
 #### Defined in
 
-[AuthDataValidator.ts:156](https://github.com/manzoorwanijk/telegram-auth/blob/063fb29/packages/server/src/AuthDataValidator.ts#L156)
+[AuthDataValidator.ts:157](https://github.com/manzoorwanijk/telegram-auth/blob/5d7eb0c/packages/server/src/AuthDataValidator.ts#L157)

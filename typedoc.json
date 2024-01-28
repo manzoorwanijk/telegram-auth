@@ -1,4 +1,5 @@
 {
+	"$schema": "https://typedoc.org/schema.json",
 	"sort": ["required-first"],
 	"excludeInternal": true,
 	"excludeProtected": true,

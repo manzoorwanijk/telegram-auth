@@ -25,7 +25,7 @@ export function LoginButton(props: LoginButtonProps) {
 	const scriptRef = useRef<HTMLScriptElement>();
 
 	useEffect(() => {
-		// destry the existing script element
+		// destroy the existing script element
 		scriptRef.current?.remove();
 
 		// init the global variable

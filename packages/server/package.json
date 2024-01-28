@@ -23,6 +23,17 @@
 		".": {
 			"import": "./dist/esm/index.js",
 			"require": "./dist/cjs/index.js"
+		},
+		"./utils": {
+			"import": "./dist/esm/utils/index.js",
+			"require": "./dist/cjs/utils/index.js"
+		}
+	},
+	"typesVersions": {
+		"*": {
+			"utils": [
+				"./dist/cjs/utils/index.d.ts"
+			]
 		}
 	},
 	"files": [
@@ -57,7 +68,8 @@
 		"test:cf": "jest --env=miniflare",
 		"test:node": "jest --env=node",
 		"test:watch": "jest --watch",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"version": "pnpm build:docs"
 	},
 	"devDependencies": {
 		"@telegram-auth/jest": "workspace:*",
