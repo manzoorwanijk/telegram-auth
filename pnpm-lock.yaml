@@ -104,10 +104,10 @@ importers:
         version: 14.1.0(@babel/core@7.23.2)(react-dom@18.2.0)(react@18.2.0)
       next-auth:
         specifier: ^4.24.5
-        version: 4.24.5(next@14.1.0)(nodemailer@6.8.0)(react-dom@18.2.0)(react@18.2.0)
+        version: 4.24.5(next@14.1.0)(nodemailer@6.9.8)(react-dom@18.2.0)(react@18.2.0)
       nodemailer:
-        specifier: ^6
-        version: 6.8.0
+        specifier: ^6.9.8
+        version: 6.9.8
       react:
         specifier: ^18.2.0
         version: 18.2.0
@@ -116,13 +116,13 @@ importers:
         version: 18.2.0(react@18.2.0)
     devDependencies:
       '@types/node':
-        specifier: ^20
-        version: 20.8.9
+        specifier: ^20.11.9
+        version: 20.11.9
       '@types/react':
         specifier: ^18.2.48
         version: 18.2.48
       typescript:
-        specifier: ^5
+        specifier: ^5.3.3
         version: 5.3.3
 
   examples/remix-basic:
@@ -9148,6 +9148,32 @@ packages:
       uuid: 8.3.2
     dev: false
 
+  /next-auth@4.24.5(next@14.1.0)(nodemailer@6.9.8)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-3RafV3XbfIKk6rF6GlLE4/KxjTcuMCifqrmD+98ejFq73SRoj2rmzoca8u764977lH/Q7jo6Xu6yM+Re1Mz/Og==}
+    peerDependencies:
+      next: ^12.2.5 || ^13 || ^14
+      nodemailer: ^6.6.5
+      react: ^17.0.2 || ^18
+      react-dom: ^17.0.2 || ^18
+    peerDependenciesMeta:
+      nodemailer:
+        optional: true
+    dependencies:
+      '@babel/runtime': 7.23.2
+      '@panva/hkdf': 1.0.2
+      cookie: 0.5.0
+      jose: 4.15.4
+      next: 14.1.0(@babel/core@7.23.2)(react-dom@18.2.0)(react@18.2.0)
+      nodemailer: 6.9.8
+      oauth: 0.9.15
+      openid-client: 5.6.1
+      preact: 10.11.3
+      preact-render-to-string: 5.2.6(preact@10.11.3)
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      uuid: 8.3.2
+    dev: false
+
   /next@14.1.0(@babel/core@7.23.2)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-wlzrsbfeSU48YQBjZhDzOwhWhGsy+uQycR8bHAOt1LY1bn3zZEcDyHQOEoN3aWzQ8LHCAJ1nqrWCc9XF2+O45Q==}
     engines: {node: '>=18.17.0'}
@@ -9208,6 +9234,11 @@ packages:
 
   /nodemailer@6.8.0:
     resolution: {integrity: sha512-EjYvSmHzekz6VNkNd12aUqAco+bOkRe3Of5jVhltqKhEsjw/y0PYPJfp83+s9Wzh1dspYAkUW/YNQ350NATbSQ==}
+    engines: {node: '>=6.0.0'}
+    dev: false
+
+  /nodemailer@6.9.8:
+    resolution: {integrity: sha512-cfrYUk16e67Ks051i4CntM9kshRYei1/o/Gi8K1d+R34OIs21xdFnW7Pt7EucmVKA0LKtqUGNcjMZ7ehjl49mQ==}
     engines: {node: '>=6.0.0'}
     dev: false
 
