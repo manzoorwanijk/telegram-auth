@@ -2,7 +2,7 @@
 	"$schema": "https://json.schemastore.org/tsconfig",
 	"extends": "./tsconfig.json",
 	"include": [
-		// do not incldue tests in the build
+		// do not include tests in the build
 		"src"
 	]
 }

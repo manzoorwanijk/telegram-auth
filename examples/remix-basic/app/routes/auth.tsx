@@ -1,6 +1,7 @@
 import { redirect } from '@remix-run/node';
 import type { LoaderFunction } from '@remix-run/node';
-import { urlStrToAuthDataMap, AuthDataValidator } from '@telegram-auth/server';
+import { AuthDataValidator } from '@telegram-auth/server';
+import { urlStrToAuthDataMap } from '@telegram-auth/server/utils';
 import { getSession, commitSession } from '../sessions';
 
 export const loader: LoaderFunction = async ({ request }) => {

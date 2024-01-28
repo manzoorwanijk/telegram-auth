@@ -55,7 +55,8 @@
 		"prepublishOnly": "pnpm build",
 		"test": "jest",
 		"test:watch": "jest --watch",
-		"typecheck": "tsc --noEmit"
+		"typecheck": "tsc --noEmit",
+		"version": "pnpm build:docs"
 	},
 	"devDependencies": {
 		"@telegram-auth/jest": "workspace:*",
