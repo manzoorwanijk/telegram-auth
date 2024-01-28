@@ -16,6 +16,8 @@ jobs:
       - name: Checkout Repo
         # https://github.com/actions/checkout
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Setup Node.js
         # https://github.com/actions/setup-node
