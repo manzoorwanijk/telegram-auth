@@ -14,16 +14,11 @@
 	"license": "MIT",
 	"main": "dist/cjs/index.js",
 	"module": "dist/esm/index.js",
-	"types": "dist/types/index.d.ts",
 	"source": "src/index.ts",
 	"exports": {
 		"./package.json": "./package.json",
 		".": {
-			"import": {
-				"node": "./dist/cjs/index.js",
-				"types": "./dist/types/index.d.ts",
-				"default": "./dist/esm/index.js"
-			},
+			"import": "./dist/esm/index.js",
 			"require": "./dist/cjs/index.js"
 		}
 	},
@@ -57,6 +52,7 @@
 		"dev": "tsc --watch",
 		"postpack": "clean-package restore",
 		"prepack": "clean-package",
+		"prepublishOnly": "pnpm build",
 		"test": "jest",
 		"test:watch": "jest --watch",
 		"typecheck": "tsc --noEmit"

@@ -7,7 +7,6 @@
 			"DOM"
 		],
 		"noEmit": false,
-		"declarationDir": "dist/types",
 		"outDir": "dist/esm"
 	},
 	"include": ["src", "tests"]

@@ -4,7 +4,6 @@
 		"lib": ["DOM", "DOM.Iterable", "ESNext"],
 		"jsx": "react",
 		"noEmit": false,
-		"declarationDir": "dist/types",
 		"outDir": "dist/esm"
 	},
 	"include": ["src", "tests"]
