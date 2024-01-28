@@ -41,7 +41,7 @@ https://core.telegram.org/widgets/login
 
 #### Defined in
 
-[LoginButton.tsx:23](https://github.com/manzoorwanijk/telegram-auth/blob/5d7eb0c/packages/react/src/LoginButton.tsx#L23)
+[LoginButton.tsx:23](https://github.com/manzoorwanijk/telegram-auth/blob/0444dc6/packages/react/src/LoginButton.tsx#L23)
 
 ___
 
@@ -69,4 +69,4 @@ https://core.telegram.org/widgets/login
 
 #### Defined in
 
-[createScript.ts:11](https://github.com/manzoorwanijk/telegram-auth/blob/5d7eb0c/packages/react/src/createScript.ts#L11)
+[createScript.ts:11](https://github.com/manzoorwanijk/telegram-auth/blob/0444dc6/packages/react/src/createScript.ts#L11)

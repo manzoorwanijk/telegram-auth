@@ -1,6 +1,6 @@
 {
 	"name": "@telegram-auth/react",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "React component to display Telegram Login Widget",
 	"keywords": [
 		"telegram",
