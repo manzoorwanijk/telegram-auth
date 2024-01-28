@@ -1,0 +1,29 @@
+{
+	"name": "@telegram-auth/example-next-auth-app-router",
+	"private": true,
+	"scripts": {
+		"dev": "next",
+		"build": "next build",
+		"start": "next start",
+		"clean": "rimraf .next .turbo",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@chakra-ui/react": "^2.8.2",
+		"@emotion/react": "^11",
+		"@emotion/styled": "^11",
+		"@telegram-auth/react": "*",
+		"@telegram-auth/server": "*",
+		"framer-motion": "^11",
+		"next": "^14.1.0",
+		"next-auth": "^4.24.5",
+		"nodemailer": "^6",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20",
+		"@types/react": "^18.2.48",
+		"typescript": "^5"
+	}
+}
