@@ -24,7 +24,7 @@
 		"release:dev": "changeset publish --tag dev",
 		"test": "turbo run test",
 		"typecheck": "tsc --noEmit",
-		"version": "changeset version",
+		"version-packages": "changeset version",
 		"version:dev": "changeset version --snapshot dev"
 	},
 	"devDependencies": {
