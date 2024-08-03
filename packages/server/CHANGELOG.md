@@ -1,5 +1,11 @@
 # @telegram-auth/server Change Log
 
+## 1.0.4
+
+### Patch Changes
+
+- [#25](https://github.com/manzoorwanijk/telegram-auth/pull/25) [`e5e86d3`](https://github.com/manzoorwanijk/telegram-auth/commit/e5e86d356e15c3a7d74939889c5228ea2c330b04) Thanks [@manzoorwanijk](https://github.com/manzoorwanijk)! - Fixed web app detection
+
 ## 1.0.3
 
 ### Patch Changes
