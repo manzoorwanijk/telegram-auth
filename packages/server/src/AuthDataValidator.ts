@@ -167,7 +167,7 @@ export class AuthDataValidator {
 
 		const dataStr = this.getFinalDataStr(authData);
 
-		const isWebAppData = authData.has('user') && authData.has('query_id');
+		const isWebAppData = authData.has('user');
 
 		const signatureKey = await this.getSecretKey(isWebAppData);
 
