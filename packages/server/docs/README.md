@@ -28,19 +28,19 @@
 
 ### AuthDataMap
 
-Ƭ **AuthDataMap**: [`Map`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map )<`string`, `string` \| `number`\>
+Ƭ **AuthDataMap**: [`Map`]( https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map )\<`string`, `string` \| `number`\>
 
 Shape of the data to be passed AuthDataValidator.validate().
 
 #### Defined in
 
-[utils/types.ts:4](https://github.com/manzoorwanijk/telegram-auth/blob/e5e86d3/packages/server/src/utils/types.ts#L4)
+[utils/types.ts:4](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/utils/types.ts#L4)
 
 ## Functions
 
 ### hexStringToArrayBuffer
 
-▸ **hexStringToArrayBuffer**(`hexString`): [`Uint8Array`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array )
+▸ **hexStringToArrayBuffer**(`hexString`): [`Uint8Array`]( https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array )
 
 It takes a hex string and returns an array buffer
 
@@ -52,13 +52,13 @@ It takes a hex string and returns an array buffer
 
 #### Returns
 
-[`Uint8Array`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array )
+[`Uint8Array`]( https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array )
 
 A Uint8Array of the hexString.
 
 #### Defined in
 
-[utils/hexStringToArrayBuffer.ts:7](https://github.com/manzoorwanijk/telegram-auth/blob/e5e86d3/packages/server/src/utils/hexStringToArrayBuffer.ts#L7)
+[utils/hexStringToArrayBuffer.ts:7](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/utils/hexStringToArrayBuffer.ts#L7)
 
 ___
 
@@ -73,7 +73,7 @@ It's useful for parsing the URLSearchParams received from Telegram.
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `searchParams` | [`URLSearchParams`]( https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams ) | URLSearchParams |
+| `searchParams` | [`URLSearchParams`]( https://developer.mozilla.org/docs/Web/API/URLSearchParams ) | URLSearchParams |
 
 #### Returns
 
@@ -83,7 +83,7 @@ A new Map object with the entries from the searchParams object.
 
 #### Defined in
 
-[utils/searchParamsToAuthDataMap.ts:10](https://github.com/manzoorwanijk/telegram-auth/blob/e5e86d3/packages/server/src/utils/searchParamsToAuthDataMap.ts#L10)
+[utils/searchParamsToAuthDataMap.ts:10](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/utils/searchParamsToAuthDataMap.ts#L10)
 
 ___
 
@@ -97,7 +97,7 @@ It takes an object and returns auth data Map
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `data` | [`Record`]( https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type )<`string`, `string` \| `number`\> | The object to convert to a Map |
+| `data` | [`Record`]( https://www.typescriptlang.org/docs/handbook/utility-types.html#recordkeys-type )\<`string`, `string` \| `number`\> | The object to convert to a Map |
 
 #### Returns
 
@@ -107,13 +107,13 @@ A new Map object with the entries of the object passed in.
 
 #### Defined in
 
-[utils/objectToAuthDataMap.ts:9](https://github.com/manzoorwanijk/telegram-auth/blob/e5e86d3/packages/server/src/utils/objectToAuthDataMap.ts#L9)
+[utils/objectToAuthDataMap.ts:9](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/utils/objectToAuthDataMap.ts#L9)
 
 ___
 
 ### urlStrToAuthDataMap
 
-▸ **urlStrToAuthDataMap**(`urlStr`): [`Map`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map )<`string`, `string`\>
+▸ **urlStrToAuthDataMap**(`urlStr`): [`Map`]( https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map )\<`string`, `string`\>
 
 It takes a URL string and returns auth data Map from the URL's query parameters.
 It's useful for parsing the URL received from Telegram.
@@ -126,10 +126,10 @@ It's useful for parsing the URL received from Telegram.
 
 #### Returns
 
-[`Map`]( https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map )<`string`, `string`\>
+[`Map`]( https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map )\<`string`, `string`\>
 
 A Map object with the key/value pairs from the URL's query string.
 
 #### Defined in
 
-[utils/urlStrToAuthDataMap.ts:8](https://github.com/manzoorwanijk/telegram-auth/blob/e5e86d3/packages/server/src/utils/urlStrToAuthDataMap.ts#L8)
+[utils/urlStrToAuthDataMap.ts:8](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/utils/urlStrToAuthDataMap.ts#L8)
