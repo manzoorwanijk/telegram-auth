@@ -36,6 +36,22 @@ export function LoginButton(props: LoginButtonProps) {
 
 		// add the script element to the DOM
 		hiddenDivRef.current?.after(scriptRef.current);
+
+		// Save siblings before unmount
+		const siblings = hiddenDivRef.current?.parentElement?.children || [];
+
+		return () => {
+			// destroy the script element on unmount
+			scriptRef.current?.remove();
+
+			// We also need to remove the rendered iframe
+			for (const element of siblings) {
+				if (element instanceof HTMLIFrameElement && element.src.includes('oauth.telegram.org')) {
+					element.remove();
+					break;
+				}
+			}
+		};
 	}, [props]);
 
 	return <div ref={hiddenDivRef} hidden />;
