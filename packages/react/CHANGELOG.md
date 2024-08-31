@@ -1,5 +1,11 @@
 # @telegram-auth/react Change Log
 
+## 1.0.4
+
+### Patch Changes
+
+- [#28](https://github.com/manzoorwanijk/telegram-auth/pull/28) [`d84bbd2`](https://github.com/manzoorwanijk/telegram-auth/commit/d84bbd25374d4a40c9b0166c23c16487f05d97de) Thanks [@manzoorwanijk](https://github.com/manzoorwanijk)! - Fixed conditional rendering of login button
+
 ## 1.0.3
 
 ### Patch Changes

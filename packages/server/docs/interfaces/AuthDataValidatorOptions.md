@@ -24,13 +24,13 @@ If you don't pass this here, you'll need to set it later using `setBotToken()`.
 
 #### Defined in
 
-[AuthDataValidator.ts:10](https://github.com/manzoorwanijk/telegram-auth/blob/e5e86d3/packages/server/src/AuthDataValidator.ts#L10)
+[AuthDataValidator.ts:10](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/AuthDataValidator.ts#L10)
 
 ___
 
 ### subtleCrypto
 
-• `Optional` **subtleCrypto**: [`SubtleCrypto`]( https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto )
+• `Optional` **subtleCrypto**: [`SubtleCrypto`]( https://developer.mozilla.org/docs/Web/API/SubtleCrypto )
 
 The crypto object to be used for validating the data
 
@@ -40,19 +40,19 @@ https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto
 
 #### Defined in
 
-[AuthDataValidator.ts:17](https://github.com/manzoorwanijk/telegram-auth/blob/e5e86d3/packages/server/src/AuthDataValidator.ts#L17)
+[AuthDataValidator.ts:17](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/AuthDataValidator.ts#L17)
 
 ___
 
 ### encoder
 
-• `Optional` **encoder**: [`TextEncoder`]( https://developer.mozilla.org/en-US/docs/Web/API/TextEncoder )
+• `Optional` **encoder**: [`TextEncoder`]( https://developer.mozilla.org/docs/Web/API/TextEncoder )
 
 The encoder to be used for encoding the data
 
 #### Defined in
 
-[AuthDataValidator.ts:22](https://github.com/manzoorwanijk/telegram-auth/blob/e5e86d3/packages/server/src/AuthDataValidator.ts#L22)
+[AuthDataValidator.ts:22](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/AuthDataValidator.ts#L22)
 
 ___
 
@@ -70,7 +70,7 @@ The time in seconds after which the data should be considered invalid
 
 #### Defined in
 
-[AuthDataValidator.ts:29](https://github.com/manzoorwanijk/telegram-auth/blob/e5e86d3/packages/server/src/AuthDataValidator.ts#L29)
+[AuthDataValidator.ts:29](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/AuthDataValidator.ts#L29)
 
 ___
 
@@ -88,4 +88,4 @@ true
 
 #### Defined in
 
-[AuthDataValidator.ts:36](https://github.com/manzoorwanijk/telegram-auth/blob/e5e86d3/packages/server/src/AuthDataValidator.ts#L36)
+[AuthDataValidator.ts:36](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/AuthDataValidator.ts#L36)
