@@ -1,7 +1,7 @@
 /**
  * Shape of the data to be passed AuthDataValidator.validate().
  */
-export type AuthDataMap = Map<string, string | number>;
+export type AuthDataMap = Map<string, string | number | object>;
 
 /**
  * The expected user data from Telegram.
@@ -18,4 +18,5 @@ export interface TelegramUserData {
 	is_bot?: boolean;
 	language_code?: string;
 	is_premium?: boolean;
+	allows_write_to_pm?: boolean;
 }

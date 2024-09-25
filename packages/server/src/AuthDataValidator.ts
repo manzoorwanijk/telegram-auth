@@ -195,7 +195,7 @@ export class AuthDataValidator {
 		let data: T;
 
 		if (isWebAppData) {
-			data = authData.has('user') ? JSON.parse(authData.get('user')?.toString() || '{}') : {};
+			data = (authData.has('user') ? authData.get('user') : {}) as T;
 		} else {
 			data = Object.fromEntries(authData.entries()) as T;
 		}
@@ -289,7 +289,11 @@ export class AuthDataValidator {
 		const dataToCheck: Array<string> = [];
 
 		for (const [key, value] of authDataMap.entries()) {
-			dataToCheck.push(`${key}=${value}`);
+			if (typeof value !== 'object') {
+				dataToCheck.push(`${key}=${value}`);
+			} else {
+				dataToCheck.push(`${key}=${JSON.stringify(value)}`);
+			}
 		}
 		dataToCheck.sort();
 
