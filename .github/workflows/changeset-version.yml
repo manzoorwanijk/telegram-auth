@@ -33,7 +33,7 @@ jobs:
       # trusted publishing requires npm >= 11.5.1
       - name: Ensure npm supports trusted publishing
         run: |
-          npm install -g npm@latest
+          npm install -g npm@11
           npm --version
 
       - name: Setup pnpm
