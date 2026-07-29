@@ -1,5 +1,14 @@
 # @telegram-auth next-auth Example
 
+> [!WARNING]
+> **Deprecated.** This example wires NextAuth.js to the `@telegram-auth/*` packages, which are deprecated in favour of Telegram's [OpenID Connect login](https://core.telegram.org/bots/telegram-login).
+>
+> Telegram publishes an OIDC discovery document, so the `AuthDataValidator` wiring this example demonstrates is no longer needed.
+>
+> **→ [Wiring it up](../../MIGRATION.md#4-wiring-it-up)** in the migration guide.
+>
+> Kept for reference only; it is not maintained.
+
 -   [NextAuth.js](https://next-auth.js.org/)
 
 ## Get Started

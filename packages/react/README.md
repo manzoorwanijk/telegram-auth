@@ -1,5 +1,15 @@
 # @telegram-auth/react
 
+> [!WARNING]
+>
+> **Deprecated and unmaintained.**
+>
+> This package is deprecated in favour of Telegram's [OpenID Connect login](https://core.telegram.org/bots/telegram-login). Replace `<LoginButton />` with Telegram's own login library, or with your own button that starts a standard OIDC redirect.
+>
+> **→ [Migration guide](https://github.com/manzoorwanijk/telegram-auth/blob/main/MIGRATION.md)**
+>
+> This package still works, but will receive no further releases, bug fixes, or security updates.
+
 [`@telegram-auth/react`](https://www.npmjs.com/package/@telegram-auth/react) exports a React component ([LoginButton](./docs#loginbutton)) to render a Telegram Login button using [Telegram Login Widget](https://core.telegram.org/widgets/login).
 
 ## Documentation

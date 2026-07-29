@@ -39,6 +39,13 @@ export interface AuthDataValidatorOptions {
 /**
  * Validates the data sent by Telegram Login Widget
  *
+ * @deprecated Unmaintained. Deprecated in favour of Telegram's OpenID Connect login, where the
+ * ID token's signature replaces this HMAC check — verify it with any OIDC client instead.
+ * Note that OIDC does **not** cover Mini App `initData` validation; for that, follow the
+ * procedure in Telegram's Mini Apps documentation.
+ * See https://github.com/manzoorwanijk/telegram-auth/blob/main/MIGRATION.md
+ *
+ * @see https://core.telegram.org/bots/telegram-login
  * @see https://core.telegram.org/widgets/login#checking-authorization
  */
 export class AuthDataValidator {
