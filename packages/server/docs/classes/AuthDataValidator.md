@@ -4,9 +4,18 @@
 
 Validates the data sent by Telegram Login Widget
 
+**`Deprecated`**
+
+Unmaintained. Deprecated in favour of Telegram's OpenID Connect login, where the
+ID token's signature replaces this HMAC check — verify it with any OIDC client instead.
+Note that OIDC does **not** cover Mini App `initData` validation; for that, follow the
+procedure in Telegram's Mini Apps documentation.
+See https://github.com/manzoorwanijk/telegram-auth/blob/main/MIGRATION.md
+
 **`See`**
 
-https://core.telegram.org/widgets/login#checking-authorization
+ - https://core.telegram.org/bots/telegram-login
+ - https://core.telegram.org/widgets/login#checking-authorization
 
 ## Table of contents
 
@@ -41,7 +50,7 @@ https://core.telegram.org/widgets/login#checking-authorization
 
 #### Defined in
 
-[AuthDataValidator.ts:55](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/AuthDataValidator.ts#L55)
+[AuthDataValidator.ts:62](https://github.com/manzoorwanijk/telegram-auth/blob/6482f90eaa7cb44dc1c9ac0274a60c05b218e146/packages/server/src/AuthDataValidator.ts#L62)
 
 ## Methods
 
@@ -63,7 +72,7 @@ Sets the bot token to be used for validating the data
 
 #### Defined in
 
-[AuthDataValidator.ts:96](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/AuthDataValidator.ts#L96)
+[AuthDataValidator.ts:103](https://github.com/manzoorwanijk/telegram-auth/blob/6482f90eaa7cb44dc1c9ac0274a60c05b218e146/packages/server/src/AuthDataValidator.ts#L103)
 
 ___
 
@@ -85,7 +94,7 @@ Sets the crypto to be used for validating the data
 
 #### Defined in
 
-[AuthDataValidator.ts:107](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/AuthDataValidator.ts#L107)
+[AuthDataValidator.ts:114](https://github.com/manzoorwanijk/telegram-auth/blob/6482f90eaa7cb44dc1c9ac0274a60c05b218e146/packages/server/src/AuthDataValidator.ts#L114)
 
 ___
 
@@ -107,7 +116,7 @@ Sets the encoder to be used for encoding the data
 
 #### Defined in
 
-[AuthDataValidator.ts:118](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/AuthDataValidator.ts#L118)
+[AuthDataValidator.ts:125](https://github.com/manzoorwanijk/telegram-auth/blob/6482f90eaa7cb44dc1c9ac0274a60c05b218e146/packages/server/src/AuthDataValidator.ts#L125)
 
 ___
 
@@ -130,7 +139,7 @@ which is the number of seconds after which the data is considered invalid.
 
 #### Defined in
 
-[AuthDataValidator.ts:131](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/AuthDataValidator.ts#L131)
+[AuthDataValidator.ts:138](https://github.com/manzoorwanijk/telegram-auth/blob/6482f90eaa7cb44dc1c9ac0274a60c05b218e146/packages/server/src/AuthDataValidator.ts#L138)
 
 ___
 
@@ -152,7 +161,7 @@ This function sets the throwIfEmptyData property of the class.
 
 #### Defined in
 
-[AuthDataValidator.ts:142](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/AuthDataValidator.ts#L142)
+[AuthDataValidator.ts:149](https://github.com/manzoorwanijk/telegram-auth/blob/6482f90eaa7cb44dc1c9ac0274a60c05b218e146/packages/server/src/AuthDataValidator.ts#L149)
 
 ___
 
@@ -186,4 +195,4 @@ https://core.telegram.org/widgets/login#checking-authorization
 
 #### Defined in
 
-[AuthDataValidator.ts:156](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/AuthDataValidator.ts#L156)
+[AuthDataValidator.ts:163](https://github.com/manzoorwanijk/telegram-auth/blob/6482f90eaa7cb44dc1c9ac0274a60c05b218e146/packages/server/src/AuthDataValidator.ts#L163)

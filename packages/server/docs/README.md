@@ -34,13 +34,13 @@ Shape of the data to be passed AuthDataValidator.validate().
 
 #### Defined in
 
-[utils/types.ts:4](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/utils/types.ts#L4)
+[utils/types.ts:4](https://github.com/manzoorwanijk/telegram-auth/blob/6482f90eaa7cb44dc1c9ac0274a60c05b218e146/packages/server/src/utils/types.ts#L4)
 
 ## Functions
 
 ### hexStringToArrayBuffer
 
-▸ **hexStringToArrayBuffer**(`hexString`): [`Uint8Array`]( https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array )
+▸ **hexStringToArrayBuffer**(`hexString`): [`Uint8Array`]( https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array )\<[`ArrayBuffer`]( https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer )\>
 
 It takes a hex string and returns an array buffer
 
@@ -52,13 +52,13 @@ It takes a hex string and returns an array buffer
 
 #### Returns
 
-[`Uint8Array`]( https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array )
+[`Uint8Array`]( https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array )\<[`ArrayBuffer`]( https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer )\>
 
 A Uint8Array of the hexString.
 
 #### Defined in
 
-[utils/hexStringToArrayBuffer.ts:7](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/utils/hexStringToArrayBuffer.ts#L7)
+[utils/hexStringToArrayBuffer.ts:7](https://github.com/manzoorwanijk/telegram-auth/blob/6482f90eaa7cb44dc1c9ac0274a60c05b218e146/packages/server/src/utils/hexStringToArrayBuffer.ts#L7)
 
 ___
 
@@ -83,7 +83,7 @@ A new Map object with the entries from the searchParams object.
 
 #### Defined in
 
-[utils/searchParamsToAuthDataMap.ts:10](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/utils/searchParamsToAuthDataMap.ts#L10)
+[utils/searchParamsToAuthDataMap.ts:10](https://github.com/manzoorwanijk/telegram-auth/blob/6482f90eaa7cb44dc1c9ac0274a60c05b218e146/packages/server/src/utils/searchParamsToAuthDataMap.ts#L10)
 
 ___
 
@@ -107,7 +107,7 @@ A new Map object with the entries of the object passed in.
 
 #### Defined in
 
-[utils/objectToAuthDataMap.ts:9](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/utils/objectToAuthDataMap.ts#L9)
+[utils/objectToAuthDataMap.ts:9](https://github.com/manzoorwanijk/telegram-auth/blob/6482f90eaa7cb44dc1c9ac0274a60c05b218e146/packages/server/src/utils/objectToAuthDataMap.ts#L9)
 
 ___
 
@@ -132,4 +132,4 @@ A Map object with the key/value pairs from the URL's query string.
 
 #### Defined in
 
-[utils/urlStrToAuthDataMap.ts:8](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/server/src/utils/urlStrToAuthDataMap.ts#L8)
+[utils/urlStrToAuthDataMap.ts:8](https://github.com/manzoorwanijk/telegram-auth/blob/6482f90eaa7cb44dc1c9ac0274a60c05b218e146/packages/server/src/utils/urlStrToAuthDataMap.ts#L8)
