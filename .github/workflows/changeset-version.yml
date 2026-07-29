@@ -12,6 +12,11 @@ jobs:
     name: Release
     if: github.repository == 'manzoorwanijk/telegram-auth'
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      # required for npm trusted publishing (OIDC)
+      id-token: write
     steps:
       - name: Checkout Repo
         # https://github.com/actions/checkout
@@ -24,6 +29,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 'lts/*'
+
+      # trusted publishing requires npm >= 11.5.1
+      - name: Ensure npm supports trusted publishing
+        run: |
+          npm install -g npm@latest
+          npm --version
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v2
