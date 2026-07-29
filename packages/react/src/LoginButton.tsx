@@ -15,6 +15,11 @@ function initTelegramAuthLogin(options: TTelegramAuthLogin) {
 /**
  * A React component that renders a Telegram login button.
  *
+ * @deprecated Unmaintained. Deprecated in favour of Telegram's OpenID Connect login. Replace
+ * this with your own button that starts a standard OIDC redirect — see
+ * https://github.com/manzoorwanijk/telegram-auth/blob/main/MIGRATION.md
+ *
+ * @see https://core.telegram.org/bots/telegram-login
  * @see https://core.telegram.org/widgets/login
  *
  * @param {LoginButtonProps} props The props to pass to the component.

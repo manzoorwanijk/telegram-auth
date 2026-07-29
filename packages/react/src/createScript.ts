@@ -3,6 +3,10 @@ import { CreateScriptOptions } from './types';
 /**
  * It creates a script tag with the right attributes to load the Telegram widget
  *
+ * @deprecated Unmaintained. Deprecated in favour of Telegram's OpenID Connect login — see
+ * https://github.com/manzoorwanijk/telegram-auth/blob/main/MIGRATION.md
+ *
+ * @see https://core.telegram.org/bots/telegram-login
  * @see https://core.telegram.org/widgets/login
  *
  * @param {CreateScriptOptions} options - The options to create the script.
