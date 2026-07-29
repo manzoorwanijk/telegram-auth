@@ -1,5 +1,13 @@
 # @telegram-auth/server Change Log
 
+## 1.0.5
+
+### Patch Changes
+
+- [#33](https://github.com/manzoorwanijk/telegram-auth/pull/33) [`6482f90`](https://github.com/manzoorwanijk/telegram-auth/commit/6482f90eaa7cb44dc1c9ac0274a60c05b218e146) Thanks [@manzoorwanijk](https://github.com/manzoorwanijk)! - Deprecate the package in favour of Telegram's OpenID Connect login.
+
+  See the [migration guide](https://github.com/manzoorwanijk/telegram-auth/blob/main/MIGRATION.md).
+
 ## 1.0.4
 
 ### Patch Changes

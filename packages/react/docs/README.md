@@ -35,13 +35,20 @@ A React component that renders a Telegram login button.
 
 A React component that renders the Telegram login button.
 
+**`Deprecated`**
+
+Unmaintained. Deprecated in favour of Telegram's OpenID Connect login. Replace
+this with your own button that starts a standard OIDC redirect — see
+https://github.com/manzoorwanijk/telegram-auth/blob/main/MIGRATION.md
+
 **`See`**
 
-https://core.telegram.org/widgets/login
+ - https://core.telegram.org/bots/telegram-login
+ - https://core.telegram.org/widgets/login
 
 #### Defined in
 
-[LoginButton.tsx:23](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/react/src/LoginButton.tsx#L23)
+[LoginButton.tsx:28](https://github.com/manzoorwanijk/telegram-auth/blob/6482f90eaa7cb44dc1c9ac0274a60c05b218e146/packages/react/src/LoginButton.tsx#L28)
 
 ___
 
@@ -63,10 +70,16 @@ It creates a script tag with the right attributes to load the Telegram widget
 
 A script element
 
+**`Deprecated`**
+
+Unmaintained. Deprecated in favour of Telegram's OpenID Connect login — see
+https://github.com/manzoorwanijk/telegram-auth/blob/main/MIGRATION.md
+
 **`See`**
 
-https://core.telegram.org/widgets/login
+ - https://core.telegram.org/bots/telegram-login
+ - https://core.telegram.org/widgets/login
 
 #### Defined in
 
-[createScript.ts:11](https://github.com/manzoorwanijk/telegram-auth/blob/d84bbd25374d4a40c9b0166c23c16487f05d97de/packages/react/src/createScript.ts#L11)
+[createScript.ts:15](https://github.com/manzoorwanijk/telegram-auth/blob/6482f90eaa7cb44dc1c9ac0274a60c05b218e146/packages/react/src/createScript.ts#L15)
